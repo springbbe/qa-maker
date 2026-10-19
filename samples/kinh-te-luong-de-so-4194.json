@@ -1,0 +1,374 @@
+{
+  "format": "qa-maker",
+  "version": 1,
+  "title": "Đề số 4194",
+  "subject": "Kinh tế lượng",
+  "description": "Đề số 4194 trong file “ĐỀ ÔN THI KINH TẾ LƯỢNG CUỐI KỲ – ĐH Ngoại thương (studocu)”. Thứ tự và số câu giữ nguyên như trong file để dễ đối chiếu.",
+  "language": "vi",
+  "passages": [],
+  "questions": [
+    {
+      "id": "1",
+      "number": "1",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Đâu là dạng ngẫu nhiên của mô hình hồi quy mẫu 2 biến",
+      "options": [
+        {
+          "key": "A",
+          "text": "$Y_i = \\beta_1 + \\beta_2 X_i + u_i$"
+        },
+        {
+          "key": "B",
+          "text": "$Y_i = \\hat{\\beta}_1 + \\hat{\\beta}_2 X_i + e_i$"
+        },
+        {
+          "key": "C",
+          "text": "$\\hat{Y}_i = \\hat{\\beta}_1 + \\hat{\\beta}_2 X_1 + \\hat{\\beta}_3 X_2$"
+        },
+        {
+          "key": "D",
+          "text": "$\\hat{Y}_i = \\hat{\\beta}_1 + \\hat{\\beta}_2 X_1 + \\hat{\\beta}_3 X_2 + u$"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Dạng ngẫu nhiên của mô hình hồi quy mẫu 2 biến là mô hình hồi quy có 1 biến độc lập, 1 biến phụ thuộc là giá trị thực tế của các quan sát, ký hiệu là Y và yếu tố phần dư ký hiệu là $e_i$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "SRF"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "2",
+      "number": "2",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Phương pháp ước lượng GLS",
+      "options": [
+        {
+          "key": "A",
+          "text": "là phương pháp bình phương tối thiểu có trọng số"
+        },
+        {
+          "key": "B",
+          "text": "có thể được dùng để giải quyết vấn đề phương sai sai số thay đổi của mô hình hồi quy"
+        },
+        {
+          "key": "C",
+          "text": "là trường hợp đặc biệt của OLS"
+        },
+        {
+          "key": "D",
+          "text": "luôn giải quyết được vấn đề phương sai sai số thay đổi của mô hình hồi quy"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phương pháp bình phương tối thiểu tổng quát có thể được sử dụng để giải quyết vấn đề phương sai sai số thay đổi của mô hình hồi quy khi xác định được sự biến đổi của phương sai sai số thay đổi theo các yếu tố đã biết.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "GLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "3",
+      "number": "3",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Trong mô hình hồi quy bội, ước lượng bình phương nhỏ nhất được tính bằng cách",
+      "options": [
+        {
+          "key": "A",
+          "text": "cho tổng bình phương các phần dư bằng 0"
+        },
+        {
+          "key": "B",
+          "text": "lấy giá trị nhỏ nhất khoảng cách giữa giá trị của các quan sát thực và giá trị ước lượng của chúng"
+        },
+        {
+          "key": "C",
+          "text": "cực tiểu hóa tổng bình phương các phần dư của mô hình"
+        },
+        {
+          "key": "D",
+          "text": "cực tiểu hóa giá trị tuyệt đối của tổng các phần dư trong mô hình"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hệ số của các biến độc lập trong mô hình hồi quy bội là nghiệm của bài toán cực trị tìm $\\min \\sum e_i^2$. Theo đó biểu thức này đạt giá trị cực tiểu nếu đạo hàm cấp 1 bằng 0 và đạo hàm cấp 2 > 0.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "OLS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "4",
+      "number": "4",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Giá trị $t_s$ cho biến TS bằng bao nhiêu?",
+      "context": "Giả sử có kết quả ước lượng như sau:\n$$CT = 55.37 + 0.78\\,TN + 0.08\\,TS + 0.09\\,TNP + e_i$$\n$Se = (13.4)\\ (0.4)\\ (0.02)\\ (0.19)$\n\n$R^2 = 0.84$, $n = 41$\n\n$t^{41} = 2.701$; $t^{38} = 2.712$; $t^{37} = 2.715$",
+      "options": [
+        {
+          "key": "A",
+          "text": "4.13"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "1.95"
+        },
+        {
+          "key": "D",
+          "text": "0.47"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$$t_s = \\frac{\\hat{\\beta}_3}{se(\\hat{\\beta}_3)} = \\frac{0.08}{0.02} = 4$$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "thống kê t"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "5",
+      "number": "5",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Đâu **không** phải nguyên nhân của khuyết tật phương sai sai số thay đổi",
+      "options": [
+        {
+          "key": "A",
+          "text": "quan sát ngoại lai"
+        },
+        {
+          "key": "B",
+          "text": "mô hình bỏ sót biến"
+        },
+        {
+          "key": "C",
+          "text": "kỹ thuật thu thập số liệu được cải thiện"
+        },
+        {
+          "key": "D",
+          "text": "hiện tượng mạng nhện"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hiện tượng mạng nhện là nguyên nhân của hiện tượng tự tương quan, không phải là nguyên nhân của phương sai sai số thay đổi.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "6",
+      "number": "6",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Đâu là dạng của mô hình hồi quy mẫu 3 biến?",
+      "options": [
+        {
+          "key": "A",
+          "text": "$E(Y|X_{2i}, X_{3i}) = \\beta_1 + \\beta_2 X_{2i} + \\beta_3 X_{3i}$"
+        },
+        {
+          "key": "B",
+          "text": "$Y_i = \\hat{\\beta}_1 + \\hat{\\beta}_2 X_{2i} + \\hat{\\beta}_3 X_{3i} + \\dots + \\hat{\\beta}_k X_{ki} + e_i$"
+        },
+        {
+          "key": "C",
+          "text": "$Y_i = \\beta_1 + \\beta_2 X_{2i} + \\beta_3 X_{3i} + u_i$"
+        },
+        {
+          "key": "D",
+          "text": "$Y_i = \\hat{\\beta}_1 + \\hat{\\beta}_2 X_{2i} + \\hat{\\beta}_3 X_{3i} + e_i$"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Theo quy ước, mô hình ước lượng sẽ có thêm dấu mũ trên các hệ số của mô hình. Mô hình có 1 biến phụ thuộc Y và 2 biến độc lập là $X_2$ và $X_3$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "SRF"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "7",
+      "number": "7",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Giá trị $t_s$ cho biến TN bằng bao nhiêu?",
+      "context": "Giả sử có kết quả ước lượng như sau:\n$$CT = 55.37 + 0.78\\,TN + 0.08\\,TS + 0.09\\,TNP + e_i$$\n$Se = (13.4)\\ (0.4)\\ (0.02)\\ (0.19)$\n\n$R^2 = 0.84$, $n = 41$\n\n$t^{41} = 2.701$; $t^{38} = 2.712$; $t^{37} = 2.715$",
+      "options": [
+        {
+          "key": "A",
+          "text": "1,95"
+        },
+        {
+          "key": "B",
+          "text": "0,47"
+        },
+        {
+          "key": "C",
+          "text": "4,13"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "$$t_s = \\frac{\\hat{\\beta}_2}{se(\\hat{\\beta}_2)} = \\frac{0.78}{0.4} = 1{,}95$$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "thống kê t"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "8",
+      "number": "8",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Đâu **không** phải là một nguyên nhân của khuyết tật tự tương quan",
+      "options": [
+        {
+          "key": "A",
+          "text": "hiện tượng trễ"
+        },
+        {
+          "key": "B",
+          "text": "hiện tượng mạng nhện"
+        },
+        {
+          "key": "C",
+          "text": "nhào nặn dữ liệu"
+        },
+        {
+          "key": "D",
+          "text": "quan sát ngoại lai"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Nguyên nhân của tự tương quan bao gồm các nguyên nhân khách quan (tính ì của số liệu, hiện tượng trễ, hiện tượng mạng nhện) và các nguyên nhân chủ quan (xác định sai mô hình, nhào nặn dữ liệu). Sự xuất hiện của các quan sát ngoại lai không phải là nguyên nhân của tự tương quan.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "tự tương quan"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "9",
+      "number": "9",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Trong bài toán kiểm định hệ số hồi quy, khi làm kiểm định một phía bằng phương pháp khoảng tin cậy thì",
+      "options": [
+        {
+          "key": "A",
+          "text": "không cần tính khoảng tin cậy một phía phải"
+        },
+        {
+          "key": "B",
+          "text": "cần tính khoảng tin cậy hai phía"
+        },
+        {
+          "key": "C",
+          "text": "cần tính khoảng tin cậy một phía trái"
+        },
+        {
+          "key": "D",
+          "text": "cần tính khoảng tin cậy một phía (phía trái hoặc phía phải)"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Đối với kiểm định một phía bằng phương pháp khoảng tin cậy thì cần xây dựng khoảng tin cậy một phía (phía trái, phía phải).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "khoảng tin cậy"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "10",
+      "number": "10",
+      "section": "Đề số 4194",
+      "type": "single",
+      "question": "Giá trị trung bình mẫu $\\bar{x}$ bằng bao nhiêu?",
+      "context": "Ta có bảng số liệu sau đây về số xe đi qua trạm thu phí, biến X (xe/ngày), trong thời gian gần đây như sau:\n\n| X | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|\n| Số ngày | 10 | 35 | 45 | 36 | 10 | 8 |",
+      "options": [
+        {
+          "key": "A",
+          "text": "7.1736"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "6.1736"
+        },
+        {
+          "key": "D",
+          "text": "8"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Giá trị trung bình mẫu $\\bar{x}$ được tính như sau:\n$$\\bar{x} = \\frac{5 \\times 10 + 6 \\times 35 + 7 \\times 45 + 8 \\times 36 + 9 \\times 10 + 10 \\times 8}{10 + 35 + 45 + 36 + 10 + 8} = \\frac{1033}{144} = 7.1736$$\nTham khảo: Bài 1, mục 1.4.3. Suy diễn thống kê.",
+      "answerSource": "document",
+      "note": "Câu này trong file là ảnh chụp màn hình bài làm trên hệ thống (kèm lời giải), đã được chép lại thành chữ.",
+      "tags": [
+        "trung bình mẫu"
+      ],
+      "difficulty": "easy"
+    }
+  ]
+}

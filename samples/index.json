@@ -1,5 +1,12 @@
 {
   "samples": [
-    "kinh-te-luong-cuoi-ky.json"
+    "kinh-te-luong-de-so-01.json",
+    "kinh-te-luong-de-so-4192.json",
+    "kinh-te-luong-de-4193.json",
+    "kinh-te-luong-de-so-4194.json",
+    "kinh-te-luong-de-4197.json",
+    "kinh-te-luong-de-4198.json",
+    "kinh-te-luong-de-4199.json",
+    "kinh-te-luong-de-4200.json"
   ]
 }

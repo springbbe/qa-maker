@@ -1,0 +1,778 @@
+{
+  "format": "qa-maker",
+  "version": 1,
+  "title": "Đề số 01",
+  "subject": "Kinh tế lượng",
+  "description": "Đề số 01 trong file “ĐỀ ÔN THI KINH TẾ LƯỢNG CUỐI KỲ – ĐH Ngoại thương (studocu)”. Thứ tự và số câu giữ nguyên như trong file để dễ đối chiếu.",
+  "language": "vi",
+  "passages": [],
+  "questions": [
+    {
+      "id": "1",
+      "number": "1",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Trung bình mẫu của phần dư OLS",
+      "options": [
+        {
+          "key": "A",
+          "text": "không biết được do hàm PRF là không biết"
+        },
+        {
+          "key": "B",
+          "text": "là một số dương"
+        },
+        {
+          "key": "C",
+          "text": "phụ thuộc vào hệ số ước lượng của biến giải thích là âm hay dương"
+        },
+        {
+          "key": "D",
+          "text": "bằng 0"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Với mô hình có hệ số chặn, điều kiện bậc nhất của OLS cho $\\sum e_i = 0$ nên $\\bar{e} = 0$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "OLS",
+        "phần dư"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "2",
+      "number": "2",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Trong các bước sau đây, bước nào **không** liên quan khi kiểm định giả thuyết?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tính độ lệch chuẩn của hệ số ước lượng."
+        },
+        {
+          "key": "B",
+          "text": "Tính p-value."
+        },
+        {
+          "key": "C",
+          "text": "Kiểm định xem phần dư có phân phối chuẩn hay không."
+        },
+        {
+          "key": "D",
+          "text": "Tính thống kê t."
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định giả thuyết về hệ số cần $se$, thống kê $t$ và p-value; kiểm định phân phối chuẩn của phần dư là bài toán khác.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định giả thuyết"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "3",
+      "number": "3",
+      "section": "Đề số 01",
+      "type": "true_false",
+      "question": "Các ước lượng OLS vẫn có tính chất không chệch ngay khi nhiễu $u$ không tuân theo quy luật phân phối chuẩn.",
+      "answer": true,
+      "explanation": "**Đúng.** Tính không chệch $E(\\hat{\\beta}_j) = \\beta_j$ chỉ cần các giả thiết Gauss–Markov (tuyến tính, mẫu ngẫu nhiên, $E(u|X)=0$, không đa cộng tuyến hoàn hảo). Giả thiết phân phối chuẩn chỉ cần cho suy diễn thống kê (kiểm định t, F) với mẫu nhỏ.",
+      "answerSource": "ai",
+      "note": "",
+      "tags": [
+        "OLS",
+        "Gauss-Markov"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "4",
+      "number": "4",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Phần dư $\\hat{u}_i$ được hiểu như sau",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\hat{Y}_i - \\hat{\\beta}_1 - \\hat{\\beta}_2 X_i$"
+        },
+        {
+          "key": "B",
+          "text": "$Y_i - \\beta_0 - \\beta_1 X_i$"
+        },
+        {
+          "key": "C",
+          "text": "$Y_i - \\bar{Y}^2$"
+        },
+        {
+          "key": "D",
+          "text": "$Y_i - \\hat{Y}_i$"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phần dư là chênh lệch giữa giá trị thực tế và giá trị ước lượng: $\\hat{u}_i = Y_i - \\hat{Y}_i$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phần dư"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "5",
+      "number": "5",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Nếu giá trị tuyệt đối của thống kê t lớn hơn giá trị tới hạn, chúng ta có thể",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bác bỏ giả thiết phương sai sai số thuần nhất."
+        },
+        {
+          "key": "B",
+          "text": "Kết luận hầu hết các giá trị thực rất gần đường hồi quy."
+        },
+        {
+          "key": "C",
+          "text": "Kết luận kết quả ước lượng được không có ý nghĩa thống kê."
+        },
+        {
+          "key": "D",
+          "text": "Bác bỏ giả thuyết không."
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "$|t| > t_{\\alpha/2}$ ⇒ thống kê rơi vào miền bác bỏ ⇒ bác bỏ $H_0$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định t"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "6",
+      "number": "6",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Để xác định Y biến đổi như thế nào khi X thay đổi, người ta dùng",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hệ số tương quan."
+        },
+        {
+          "key": "B",
+          "text": "Các phương án còn lại đều sai."
+        },
+        {
+          "key": "C",
+          "text": "Hệ số góc."
+        },
+        {
+          "key": "D",
+          "text": "Hệ số tương quan."
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": true,
+      "explanation": "Hệ số góc $\\beta_2 = \\frac{\\Delta Y}{\\Delta X}$ cho biết Y thay đổi bao nhiêu khi X tăng 1 đơn vị.",
+      "answerSource": "document",
+      "note": "Phương án A và D trong tài liệu trùng nhau.",
+      "tags": [
+        "hệ số góc"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "7",
+      "number": "7",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Kiểm định F về sự phù hợp của hàm hồi quy kiểm định có giả thiết không là",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toàn bộ các biến độc lập trong mô hình đều không ảnh hưởng đến biến phụ thuộc."
+        },
+        {
+          "key": "B",
+          "text": "Hệ số chặn và tất cả các hệ số góc đều bằng 0."
+        },
+        {
+          "key": "C",
+          "text": "Hệ số chặn bằng 1 và không phải tất cả các hệ số góc đều bằng 0."
+        },
+        {
+          "key": "D",
+          "text": "Hệ số góc của biến quan tâm bằng 0 và hệ số góc của tất cả các biến còn lại khác 0."
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "$H_0: \\beta_2 = \\beta_3 = \\dots = \\beta_k = 0$ (không bao gồm hệ số chặn).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định F"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "8",
+      "number": "8",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Trong mô hình $Y = \\hat{\\beta}_1 + \\hat{\\beta}_2 X + \\hat{u}$, nếu $\\hat{\\beta}_2 = 0$ thì",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0 < R^2 < 1$"
+        },
+        {
+          "key": "B",
+          "text": "$R^2 = \\bar{Y}$"
+        },
+        {
+          "key": "C",
+          "text": "$R^2 = 0$"
+        },
+        {
+          "key": "D",
+          "text": "$R^2 < 0$"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Khi $\\hat{\\beta}_2 = 0$ thì $\\hat{Y}_i = \\bar{Y}$ với mọi $i$ nên $ESS = 0$ ⇒ $R^2 = ESS/TSS = 0$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "R²"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "9",
+      "number": "9",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Dưới các giả thuyết của định lý Gauss-Markov, các ước lượng OLS",
+      "options": [
+        {
+          "key": "A",
+          "text": "có phân phối chuẩn nếu n > 15"
+        },
+        {
+          "key": "B",
+          "text": "là ước lượng tuyến tính không chệch tốt nhất của các hệ số hồi quy"
+        },
+        {
+          "key": "C",
+          "text": "có phân phối chuẩn, thậm chí trong trường hợp mẫu nhỏ"
+        },
+        {
+          "key": "D",
+          "text": "các phương án còn lại đều đúng"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": true,
+      "explanation": "Định lý Gauss–Markov: OLS là BLUE (Best Linear Unbiased Estimator).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Gauss-Markov"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "10",
+      "number": "10",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Mục tiêu đặc trưng của kinh tế lượng là",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dự báo các biến kinh tế"
+        },
+        {
+          "key": "B",
+          "text": "đánh gia và bổ sung chính sách của chính phủ và doanh nghiệp"
+        },
+        {
+          "key": "C",
+          "text": "ước lượng mối quan hệ giữa các biến kinh tế"
+        },
+        {
+          "key": "D",
+          "text": "các phương án còn lại đều đúng"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": true,
+      "explanation": "Kinh tế lượng phục vụ cả ước lượng quan hệ, kiểm định lý thuyết, dự báo và đánh giá chính sách.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "nhập môn"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "11",
+      "number": "11",
+      "section": "Đề số 01",
+      "type": "true_false",
+      "question": "Các hệ số ước lượng OLS được xác định bằng cách tối thiểu hóa tổng bình phương giá trị của biến phụ thuộc.",
+      "answer": false,
+      "explanation": "**Sai.** OLS tối thiểu hóa tổng bình phương các **phần dư** $\\sum e_i^2 = \\sum (Y_i - \\hat{Y}_i)^2$, không phải tổng bình phương giá trị của biến phụ thuộc.",
+      "answerSource": "ai",
+      "note": "",
+      "tags": [
+        "OLS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "12",
+      "number": "12",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Trong mô hình $Y_i = \\beta_1 + \\beta_2 X_i + u_i$, khi gặp vấn đề bỏ sót biến quan trọng, giả thiết $E(u_i|X_i)$ bị vi phạm. Điều này được hiểu là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "tương quan giữa nhiễu và biến độc lập khác 0"
+        },
+        {
+          "key": "B",
+          "text": "tổng các phần dư khác 0"
+        },
+        {
+          "key": "C",
+          "text": "hệ số ước lượng OLS là chệch"
+        },
+        {
+          "key": "D",
+          "text": "trung bình mẫu của biến Y và X không nằm trên đường hồi quy SRF mẫu"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Bỏ sót biến quan trọng có tương quan với X làm $E(u|X) \\neq 0$ ⇒ ước lượng OLS bị chệch.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "bỏ sót biến"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "13",
+      "number": "13",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Ước lượng OLS thỏa mãn điều kiện",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tổng bình phương các phần dư nhỏ nhất."
+        },
+        {
+          "key": "B",
+          "text": "Tổng bình phương hồi quy nhỏ nhất."
+        },
+        {
+          "key": "C",
+          "text": "$R^2$ nhỏ nhất."
+        },
+        {
+          "key": "D",
+          "text": "Không có phương án nào đúng."
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": true,
+      "explanation": "OLS: $\\min \\sum e_i^2$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "OLS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "14",
+      "number": "14",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Trong mô hình $Y_i = \\beta_1 + \\beta_2 X_i + u_i$, sai số ngẫu nhiên có phương sai thay đổi nếu:",
+      "options": [
+        {
+          "key": "A",
+          "text": "biến X có phân phối chuẩn"
+        },
+        {
+          "key": "B",
+          "text": "$var(u_i|X_i)$ là hàm của biến X"
+        },
+        {
+          "key": "C",
+          "text": "không có điểm dị biệt"
+        },
+        {
+          "key": "D",
+          "text": "$var(u_i|X_i = x)$ không đổi với $i = 1, 2, \\dots, n$"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phương sai sai số thay đổi: $var(u_i|X_i) = \\sigma_i^2$ phụ thuộc vào $X_i$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "15",
+      "number": "15",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "p-value có giá trị rất nhỏ",
+      "options": [
+        {
+          "key": "A",
+          "text": "Điều này chỉ xảy ra với xác suất là 5%."
+        },
+        {
+          "key": "B",
+          "text": "Hàm ý thống kê t nhỏ hơn 1.96."
+        },
+        {
+          "key": "C",
+          "text": "Đây là bằng chứng bác bỏ giả thuyết không"
+        },
+        {
+          "key": "D",
+          "text": "Đây là bằng chứng ủng hộ giả thuyết không."
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "p-value $< \\alpha$ ⇒ bác bỏ $H_0$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "p-value"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "16",
+      "number": "16",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Sự khác nhau giữa kiểm định một phía và kiểm định hai phía nằm ở",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dấu của hệ số góc."
+        },
+        {
+          "key": "B",
+          "text": "Phụ thuộc vào kích cỡ mẫu."
+        },
+        {
+          "key": "C",
+          "text": "Cách diễn giải thống kê t."
+        },
+        {
+          "key": "D",
+          "text": "Giả thuyết không."
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hai loại kiểm định khác nhau ở giả thuyết đối và miền bác bỏ, tức cách so sánh/diễn giải thống kê t ($|t| > t_{\\alpha/2}$ hay $t > t_\\alpha$ / $t < -t_\\alpha$).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định t"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "17",
+      "number": "17",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Sử dụng dữ liệu thu nhập (I) và chi tiêu (C) của 100 hộ gia đình, ta ước lượng được mô hình: $C = \\beta_1 + \\beta_2 I + u$, $\\beta_2$ cho biết:",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\frac{C}{I}$"
+        },
+        {
+          "key": "B",
+          "text": "$\\frac{\\Delta I}{\\Delta C}$"
+        },
+        {
+          "key": "C",
+          "text": "$\\frac{\\Delta C}{\\Delta I}$"
+        },
+        {
+          "key": "D",
+          "text": "Không có phương án nào đúng"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": true,
+      "explanation": "$\\beta_2$ là xu hướng tiêu dùng cận biên: chi tiêu thay đổi bao nhiêu khi thu nhập tăng 1 đơn vị.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "hệ số góc"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "18",
+      "number": "18",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Dữ liệu lạm phát của Việt Nam từ năm 1970 đến năm 2006 là loại dữ liệu",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chéo."
+        },
+        {
+          "key": "B",
+          "text": "Bảng."
+        },
+        {
+          "key": "C",
+          "text": "Chuỗi thời gian."
+        },
+        {
+          "key": "D",
+          "text": "Chéo gộp."
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Một đối tượng (Việt Nam) quan sát qua nhiều thời điểm ⇒ chuỗi thời gian.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "loại dữ liệu"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "19",
+      "number": "19",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Mô hình $Y = \\beta_1 + \\beta_1 \\frac{1}{X} + u$ là mô hình tuyến tính với",
+      "options": [
+        {
+          "key": "A",
+          "text": "tham số và biến số X"
+        },
+        {
+          "key": "B",
+          "text": "không có phương án nào đúng"
+        },
+        {
+          "key": "C",
+          "text": "tham số"
+        },
+        {
+          "key": "D",
+          "text": "biến số X"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": true,
+      "explanation": "Mô hình tuyến tính theo tham số $\\beta$ nhưng phi tuyến theo biến X (do có $1/X$).",
+      "answerSource": "document",
+      "note": "Tài liệu ghi $\\beta_1 \\frac{1}{X}$, có thể là lỗi đánh máy của $\\beta_2$.",
+      "tags": [
+        "dạng hàm"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "20",
+      "number": "20",
+      "section": "Đề số 01",
+      "type": "true_false",
+      "question": "Kiểm định t chỉ có ý nghĩa khi các ước lượng OLS tuân theo quy luật phân phối chuẩn.",
+      "answer": true,
+      "explanation": "**Đúng** (với mẫu nhỏ). Thống kê $t = \\frac{\\hat{\\beta}_j - \\beta_j}{se(\\hat{\\beta}_j)}$ chỉ có phân phối Student khi $\\hat{\\beta}_j$ có phân phối chuẩn (tức $u$ phân phối chuẩn). Với mẫu lớn, nhờ định lý giới hạn trung tâm, $\\hat{\\beta}_j$ xấp xỉ chuẩn nên kiểm định t vẫn dùng được.",
+      "answerSource": "ai",
+      "note": "",
+      "tags": [
+        "kiểm định t"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "21",
+      "number": "21",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Hệ số $\\beta_2$ trong phương trình $Y = \\beta_1 + \\beta_2 \\ln(X) + u$ được hiểu là",
+      "options": [
+        {
+          "key": "A",
+          "text": "khi X thay đổi 1 đơn vị thì Y thay đổi $\\beta_2 \\times 100$ đơn vị"
+        },
+        {
+          "key": "B",
+          "text": "khi X thay đổi 1 đơn vị thì Y thay đổi $\\beta_2 \\times 100\\%$"
+        },
+        {
+          "key": "C",
+          "text": "khi X thay đổi 1% thì Y thay đổi $\\beta_2 \\times 0{,}01$ đơn vị"
+        },
+        {
+          "key": "D",
+          "text": "khi X thay đổi 1 đơn vị thì Y thay đổi $\\beta_2$ đơn vị"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Mô hình lin–log: $\\Delta Y \\approx \\frac{\\beta_2}{100} \\cdot (\\%\\Delta X)$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "dạng hàm"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "22",
+      "number": "22",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Phương sai của các ước lượng càng nhỏ khi",
+      "options": [
+        {
+          "key": "A",
+          "text": "Các phương án còn lại đều sai."
+        },
+        {
+          "key": "B",
+          "text": "Kích cỡ mẫu càng lớn."
+        },
+        {
+          "key": "C",
+          "text": "Các biến độc lập tương quan mạnh với nhau."
+        },
+        {
+          "key": "D",
+          "text": "Kích cỡ mẫu càng nhỏ."
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": true,
+      "explanation": "$var(\\hat{\\beta}_j) = \\frac{\\sigma^2}{TSS_j(1-R_j^2)}$; n lớn ⇒ $TSS_j$ lớn ⇒ phương sai nhỏ.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai ước lượng"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "23",
+      "number": "23",
+      "section": "Đề số 01",
+      "type": "single",
+      "question": "Khoảng tin cậy 95% của $\\beta_j$",
+      "options": [
+        {
+          "key": "A",
+          "text": "so sánh giá trị của hệ số góc với hệ số chặn"
+        },
+        {
+          "key": "B",
+          "text": "giúp chúng ta kết luận ý nghĩa kinh tế của biến $\\beta_j$"
+        },
+        {
+          "key": "C",
+          "text": "các phương án còn lại đều đúng"
+        },
+        {
+          "key": "D",
+          "text": "có thể dùng để kiểm định $H_0: \\beta_j = a_j$"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": true,
+      "explanation": "Nếu $a_j$ không thuộc khoảng tin cậy 95% của $\\beta_j$ thì bác bỏ $H_0: \\beta_j = a_j$ ở mức ý nghĩa 5%.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "khoảng tin cậy"
+      ],
+      "difficulty": "medium"
+    }
+  ]
+}

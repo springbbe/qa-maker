@@ -42,6 +42,8 @@ Nếu đổi định dạng: cập nhật **cùng lúc** prompt, `normalizeQuest
 
 Thêm đề mẫu: thả file JSON vào `samples/` và thêm tên file vào `samples/index.json`. Không đổi `id` câu của đề mẫu đã phát hành (tiến độ người dùng gắn theo `id`).
 
+Đề mẫu hiện có: 8 đề Kinh tế lượng (`kinh-te-luong-de-*.json`) tách từ file PDF “ĐỀ ÔN THI KINH TẾ LƯỢNG CUỐI KỲ” (studocu, ĐH Ngoại thương), mỗi tiêu đề đề trong file là một bộ đề, tên đề giữ như trong file, thứ tự trong `index.json` theo thứ tự trong file. `id` = `number` = số câu in trong file (file đánh số tiếp từ Đề 4198: 41–80, 4199: 81–120, 4200: 121–160) để dễ đối chiếu. Đáp án lấy theo đánh dấu của file (tô vàng/xanh, in đậm nghiêng); câu file đánh dấu sai/thiếu vẫn giữ đáp án của file và ghi lý do vào `note`.
+
 Tiến độ mỗi câu (`qam:prog:<deckId>` → `{ [qid]: {...} }`): `a` số lần làm, `c` đúng, `w` sai, `last` (1/0), `t` thời điểm, `known` (flashcard), `star`, `srs {reps,int,ef,due}`.
 
 ## Kiểm thử

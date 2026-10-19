@@ -1,0 +1,1461 @@
+{
+  "format": "qa-maker",
+  "version": 1,
+  "title": "Đề 4198",
+  "subject": "Kinh tế lượng",
+  "description": "Đề 4198 trong file “ĐỀ ÔN THI KINH TẾ LƯỢNG CUỐI KỲ – ĐH Ngoại thương (studocu)”. Số câu giữ nguyên như trong file (file đánh số tiếp từ câu 41) để dễ đối chiếu.",
+  "language": "vi",
+  "passages": [],
+  "questions": [
+    {
+      "id": "41",
+      "number": "41",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Với mức ý nghĩa bằng $\\alpha = 1\\%$, bằng phương pháp giá trị tới hạn hệ số hồi quy của biến TN có ý nghĩa thống kê hay không?",
+      "context": "Giả sử có kết quả ước lượng như sau:\n$$CT = 55.37 + 0.78\\,TN + 0.08\\,TS + 0.09\\,TNP + e_i$$\n$(se) = (13{,}4)\\ (0{,}4)\\ (0{,}02)\\ (0{,}19)$\n\n$R^2 = 0{,}84$; $n = 41$\n\nBiết $t^{41} = 2{,}701$; $t^{38} = 2{,}712$; $t^{37} = 2{,}715$",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chưa đủ cơ sở để kết luận"
+        },
+        {
+          "key": "B",
+          "text": "Không, vì $t_s$ nhỏ"
+        },
+        {
+          "key": "C",
+          "text": "Có, vì $t_s$ lớn"
+        },
+        {
+          "key": "D",
+          "text": "Có, $t_s$ nhỏ"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Ta có cặp giả thuyết: $H_0: \\beta_2 = 0$; $H_1: \\beta_2 \\neq 0$\n$$t_s = \\frac{\\hat{\\beta}_2}{se(\\hat{\\beta}_2)} = \\frac{0.78}{0.4} = 1.95$$\n$t_s < t^{37} = 2.715$: Không bác bỏ $H_0$. Vậy hệ số hồi quy của biến TN không có ý nghĩa thống kê vì $t_s$ nhỏ.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định t"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "42",
+      "number": "42",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Biến ngẫu nhiên X tuân theo phân phối chuẩn thì:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phân phối có giá trị kỳ vọng và phương sai lần lượt là k và 2k"
+        },
+        {
+          "key": "B",
+          "text": "Biến X có phân phối với giá trị kỳ vọng là m và phương sai là $s^2$"
+        },
+        {
+          "key": "C",
+          "text": "Phân phối có bậc tự do là $t_k^2 = F_{1,k}$"
+        },
+        {
+          "key": "D",
+          "text": "Phân phối khi bình phương có giá trị kỳ vọng và phương sai lần lượt là 0 và $\\frac{k}{k-2}$"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Biến X có phân phối chuẩn được xác định bởi kỳ vọng $m$ và phương sai $s^2$: $X \\sim N(m, s^2)$.",
+      "answerSource": "document",
+      "note": "Phương án C và D trong file bị thiếu công thức ở cuối (\"Phân phối có bậc tự do là\", \"... lần lượt là 0 và\"); đã bổ sung theo câu tương tự trong Đề số 4192 (câu 33).",
+      "tags": [
+        "phân phối chuẩn"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "43",
+      "number": "43",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Thuật ngữ hiệu chỉnh trong hệ số xác định bội đã hiệu chỉnh $\\bar{R}^2$ có nghĩa là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Điều chỉnh theo bậc tự do tương ứng của TSS"
+        },
+        {
+          "key": "B",
+          "text": "Điều chỉnh theo bậc tự do tương ứng của tất cả các độ lệch bình phương"
+        },
+        {
+          "key": "C",
+          "text": "Điều chỉnh theo bậc tự do tương ứng của RSS"
+        },
+        {
+          "key": "D",
+          "text": "Điều chỉnh theo bậc tự do tương ứng của ESS"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": true,
+      "explanation": "$$\\bar{R}^2 = 1 - \\frac{RSS}{TSS} = 1 - \\frac{\\sum_{i=1}^{n} e_i^2}{\\sum_{i=1}^{n} y_i^2} = \\frac{\\sum \\frac{e_i^2}{n-k}}{\\sum \\frac{y_i^2}{n-k}}$$",
+      "answerSource": "document",
+      "note": "Công thức trong file chép như nguyên bản; công thức chuẩn là $\\bar{R}^2 = 1 - \\frac{RSS/(n-k)}{TSS/(n-1)}$.",
+      "tags": [
+        "R² hiệu chỉnh"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "44",
+      "number": "44",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Giả sử có kết quả ước lượng như sau: $wage = 2783.48 + 20.389\\,age + e_i$. Nếu $age = 30$, giá trị ước lượng điểm của age bằng bao nhiêu?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2803.87"
+        },
+        {
+          "key": "B",
+          "text": "3395.15"
+        },
+        {
+          "key": "C",
+          "text": "20.389"
+        },
+        {
+          "key": "D",
+          "text": "2763.091"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$E(wage|age = 30) = 2783.48 + 20.389 \\times 30 = 3395.15$",
+      "answerSource": "document",
+      "note": "Câu hỏi trong file ghi \"giá trị ước lượng điểm của age\", ý là của wage.",
+      "tags": [
+        "dự báo"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "45",
+      "number": "45",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Tổng bình phương các phần dư RSS thể hiện:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị thực tế của Y với giá trị ước lượng của nó"
+        },
+        {
+          "key": "B",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị trung bình của Y với giá trị ước lượng của nó"
+        },
+        {
+          "key": "C",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị ước lượng của Y với giá trị trung bình của nó"
+        },
+        {
+          "key": "D",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị thực tế của Y với giá trị trung bình của nó"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": true,
+      "explanation": "$RSS = \\sum e_i^2$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "RSS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "46",
+      "number": "46",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Đa cộng tuyến không hoàn hảo có hậu quả gì với kết quả ước lượng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Làm cho ước lượng OLS kém chính xác"
+        },
+        {
+          "key": "B",
+          "text": "Làm mất đi phần dư của mô hình hồi quy"
+        },
+        {
+          "key": "C",
+          "text": "Làm cho sai số ngẫu nhiên có phương sai thay đổi"
+        },
+        {
+          "key": "D",
+          "text": "Làm cho ước lượng OLS bị chệch"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Đa cộng tuyến là khi mà các biến độc lập có tương quan cao với nhau, như đã biết ở bài 2, tương quan cao giữa các biến độc lập khiến cho phương sai của các ước lượng OLS lớn hơn, đồng nghĩa với việc ước lượng thu được là kém chính xác.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "đa cộng tuyến"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "47",
+      "number": "47",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Tổng bình phương tổng thể TSS thể hiện:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị thực tế của Y với giá trị ước lượng của nó"
+        },
+        {
+          "key": "B",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị thực tế của Y với giá trị trung bình của nó"
+        },
+        {
+          "key": "C",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị trung bình của Y với giá trị ước lượng của nó"
+        },
+        {
+          "key": "D",
+          "text": "Tổng bình phương tất cả các sai lệch giữa giá trị ước lượng của Y với giá trị trung bình của nó"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": true,
+      "explanation": "$TSS = \\sum (Y_i - \\bar{Y})^2$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "TSS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "48",
+      "number": "48",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Trong bài toán kiểm định, giả thuyết $H_0$:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Thường ta luôn muốn chứng minh nó sai"
+        },
+        {
+          "key": "B",
+          "text": "Được cho là sai đến khi nó được chứng minh là đúng"
+        },
+        {
+          "key": "C",
+          "text": "Được cho là đúng đến khi nó bị chứng minh là sai (bác bỏ)"
+        },
+        {
+          "key": "D",
+          "text": "Thường ta luôn muốn chứng minh nó đúng"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "$H_0$ là một tuyên bố bị nghi ngờ, $H_0$ được cho là đúng đến khi nó bị chứng minh là sai (bác bỏ).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định giả thuyết"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "49",
+      "number": "49",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Hồi quy mô hình $Y_i = b_0 + b_1 X_1 + b_2 X_2 + b_3 X_3 + b_4 X_4 + u_i$ thu được $R_U^2 = 0{,}872$. Có ý kiến cho rằng có thể bỏ qua $X_2$; $X_3$ ra khỏi mô hình, thực hiện hồi quy $Y_i = b_0 + b_1 X_1 + b_4 X_4 + u_i$ thu được $R_R^2 = 0{,}685$. Biết mẫu có $n = 25$ quan sát. $F_s$ cho kiểm định thu hẹp hồi quy có giá trị bằng bao nhiêu:",
+      "options": [
+        {
+          "key": "A",
+          "text": "11.903"
+        },
+        {
+          "key": "B",
+          "text": "14.609"
+        },
+        {
+          "key": "C",
+          "text": "29.2187"
+        },
+        {
+          "key": "D",
+          "text": "20.120"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$$F_s = \\frac{\\frac{R_U^2 - R_R^2}{m}}{\\frac{1 - R_U^2}{n-k}} = \\frac{R_U^2 - R_R^2}{1 - R_U^2} \\times \\frac{n-k}{m} = \\frac{0.872 - 0.685}{1 - 0.872} \\times \\frac{25-5}{2} = 14{,}609$$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định F",
+        "thu hẹp hồi quy"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "50",
+      "number": "50",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Phân tích hồi quy nhằm mục đích gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ước lượng dự báo giá trị trung bình của các biến độc lập"
+        },
+        {
+          "key": "B",
+          "text": "Dự báo mối quan hệ giữa các biến số"
+        },
+        {
+          "key": "C",
+          "text": "Ước lượng dự báo giá trị trung bình của biến phụ thuộc"
+        },
+        {
+          "key": "D",
+          "text": "Ước lượng mối quan hệ tất định giữa các biến số"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phân tích hồi quy nhằm mục đích ước lượng, dự báo giá trị trung bình của biến phụ thuộc khi đã biết giá trị của các biến độc lập.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "nhập môn"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "51",
+      "number": "51",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Theo kết quả hồi quy trên $R^2 = 0.801$ có nghĩa là:",
+      "context": "Khảo sát vốn đầu tư Y (tỷ đồng) theo lãi suất ngân hàng $X_2$ (%) và tốc độ tăng trưởng $X_3$ (%). Với số liệu gồm có 20 quan sát, ước lượng được mô hình sau:\n$$\\hat{Y} = 40.815 - 1.012 X_2 + 2.123 X_3$$\n$t = (2.748)\\ (-2.842)\\ (3.485)$\n\n$R^2 = 0.801$",
+      "options": [
+        {
+          "key": "A",
+          "text": "80,1% vốn đầu tư trung bình được giải thích bởi lãi suất ngân hàng và tốc độ tăng trưởng GDP"
+        },
+        {
+          "key": "B",
+          "text": "80,1% vốn đầu tư trung bình được giải thích bởi tốc độ tăng trưởng GDP"
+        },
+        {
+          "key": "C",
+          "text": "80,1% vốn đầu tư trung bình được giải thích bởi lãi suất ngân hàng"
+        },
+        {
+          "key": "D",
+          "text": "80,1% sự dao động của vốn đầu tư trung bình được giải thích bởi lãi suất ngân hàng và tốc độ tăng trưởng GDP"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hệ số $R^2$ cho biết phần trăm dao động của biến phụ thuộc được giải thích bởi tất cả các biến độc lập trong mô hình.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "R²"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "52",
+      "number": "52",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Công thức tính hệ số xác định bội đã hiệu chỉnh $\\bar{R}^2$ nếu biết $R^2$ là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "$(1 - R^2)\\frac{n-1}{n-k-1}$"
+        },
+        {
+          "key": "B",
+          "text": "$1 - (1 - R^2)\\frac{n-1}{n-k}$"
+        },
+        {
+          "key": "C",
+          "text": "$(1 - R^2)\\frac{n-1}{n-k}$"
+        },
+        {
+          "key": "D",
+          "text": "$(1 - R^2)\\frac{n-1}{n-k-1}$"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hệ số xác định bội đã hiệu chỉnh là hệ số được tính bằng cách đưa thêm bậc tự do của các tổng bình phương vào công thức tính hệ số xác định bội nhằm khắc phục hiện tượng bậc tự do bị giảm.",
+      "answerSource": "document",
+      "note": "Phương án A và D trong file giống hệt nhau.",
+      "tags": [
+        "R² hiệu chỉnh"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "53",
+      "number": "53",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Đâu là dạng của hàm hồi quy tổng thể 2 biến?",
+      "options": [
+        {
+          "key": "A",
+          "text": "$Y = \\beta_1 + \\beta_2 X_i$"
+        },
+        {
+          "key": "B",
+          "text": "$E(Y/X_i) = \\beta_1 + \\beta_2 X_i + u$"
+        },
+        {
+          "key": "C",
+          "text": "$E(Y/X_i) = \\beta_1 + \\beta_2 X_1 + \\beta_3 X_2$"
+        },
+        {
+          "key": "D",
+          "text": "$E(Y/X_i) = \\beta_1 + \\beta_2 X_i$"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hàm hồi quy tổng thể 2 biến biểu diễn giá trị kỳ vọng có điều kiện của Y theo một biến độc lập: $E(Y/X_i) = \\beta_1 + \\beta_2 X_i$.",
+      "answerSource": "document",
+      "note": "Trong file các phương án của câu này được đánh nhầm là e, f, g, h; file không có giải thích (giải thích do AI viết).",
+      "tags": [
+        "PRF"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "54",
+      "number": "54",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Trong bài toán kiểm định giả thuyết thống kê, quy trình gồm có mấy bước?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2 bước"
+        },
+        {
+          "key": "B",
+          "text": "3 bước"
+        },
+        {
+          "key": "C",
+          "text": "4 bước"
+        },
+        {
+          "key": "D",
+          "text": "1 bước"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Bước 1: Viết cặp giả thuyết\nBước 2: Tìm giá trị thống kê\nBước 3: So sánh giá trị tới hạn\nBước 4: Kết luận",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định giả thuyết"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "55",
+      "number": "55",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Yếu tố nào sau đây **không** ảnh hưởng tới độ chính xác của các ước lượng OLS trong mô hình hồi quy bội?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mức độ biến động trong giá trị của các biến độc lập"
+        },
+        {
+          "key": "B",
+          "text": "Mức độ biến động của giá trị biến phụ thuộc"
+        },
+        {
+          "key": "C",
+          "text": "Phương sai của sai số ngẫu nhiên"
+        },
+        {
+          "key": "D",
+          "text": "Kích thước mẫu"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Sự biến động về giá trị của biến phụ thuộc chỉ là hệ quả của mô hình.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai ước lượng"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "56",
+      "number": "56",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Đồ thị sau là đồ thị của phân phối nào?",
+      "figure": "Đồ thị có tiêu đề \"The Chi Square Distribution with 5, 10 and 15 degrees of freedom\": trục tung $f(x^2)$ (0 đến 0.16), trục hoành $x^2$ (0 đến 30). Ba đường cong lệch phải, bắt đầu từ 0: đường k = 5 có đỉnh cao nhất (≈ 0.15) ở gần $x^2 \\approx 3$; đường k = 10 có đỉnh ≈ 0.10 ở gần 8; đường k = 15 có đỉnh thấp nhất ≈ 0.075 ở gần 13. Bậc tự do càng lớn, đường cong càng dẹt và càng gần đối xứng.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chi - bình phương"
+        },
+        {
+          "key": "B",
+          "text": "Chuẩn"
+        },
+        {
+          "key": "C",
+          "text": "t (student)"
+        },
+        {
+          "key": "D",
+          "text": "F (fisher)"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Đồ thị của phân phối khi bình phương là đường cong không đối xứng với các bậc tự do k = 5; k = 10; k = 15. Khi bậc tự do tăng lên, đồ thị của phân phối khi bình phương gần đối xứng (dạng hình chuông).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phân phối khi bình phương"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "57",
+      "number": "57",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Mô hình $\\ln(Y_i) = \\beta_1 + \\beta_2 X_i + u_i$ là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "mô hình tuyến tính theo biến số"
+        },
+        {
+          "key": "B",
+          "text": "mô hình phi tuyến tính theo cả tham số và biến số"
+        },
+        {
+          "key": "C",
+          "text": "mô hình tuyến tính theo cả tham số và biến số"
+        },
+        {
+          "key": "D",
+          "text": "mô hình tuyến tính trong các tham số nhưng phi tuyến tính theo biến số"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong mô hình có tham số là $\\beta_1$ và $\\beta_2$, biến phụ thuộc là $\\ln(Y)$, biến độc lập là X nên đây là mô hình tuyến tính trong các tham số nhưng phi tuyến tính theo biến số.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "dạng hàm"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "58",
+      "number": "58",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Trong công thức tính phương sai của hệ số hồi quy góc ước lượng hàm hồi quy hai biến $x_i$ là gì?\n$$var(\\hat{\\beta}_2) = \\frac{\\sigma^2}{\\sum_{i=1}^{n} x_i^2}$$",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chênh lệch giữa giá trị được dự đoán ở từng quan sát với giá trị trung bình mẫu của biến"
+        },
+        {
+          "key": "B",
+          "text": "Giá trị thực của từng quan sát"
+        },
+        {
+          "key": "C",
+          "text": "Chênh lệch giữa giá trị thực và giá trị được dự đoán ở từng quan sát"
+        },
+        {
+          "key": "D",
+          "text": "Chênh lệch giữa giá trị thực của biến ở từng quan sát với giá trị trung bình mẫu của biến"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong công thức tính phương sai của hệ số hồi quy góc ước lượng của hàm hồi quy 2 biến $x_i = X_i - \\bar{X}$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai ước lượng"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "59",
+      "number": "59",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Trị thống kê d của kiểm định Durbin-Watson có giá trị là 1.1. Biết rằng các giá trị tới hạn $d_L = 1.32$ và $d_U = 1.52$. Ta có kết luận gì về hiện tượng tự tương quan trong mô hình hồi quy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Có tự tương quan âm giữa các sai số ngẫu nhiên"
+        },
+        {
+          "key": "B",
+          "text": "Có tự tương quan dương giữa các sai số ngẫu nhiên"
+        },
+        {
+          "key": "C",
+          "text": "Không có đủ bằng chứng để kết luận về hiện tượng tự tương quan trong mô hình"
+        },
+        {
+          "key": "D",
+          "text": "Không có tự tương quan giữa các sai số ngẫu nhiên"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$d < d_L$ nên có tự tương quan dương giữa các sai số ngẫu nhiên.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Durbin-Watson",
+        "tự tương quan"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "60",
+      "number": "60",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Khi kiểm định giả thuyết cho một hệ số hồi quy riêng biệt, những cách nào có thể được sử dụng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tính giá trị Z chuẩn hóa"
+        },
+        {
+          "key": "B",
+          "text": "Tính giá trị F"
+        },
+        {
+          "key": "C",
+          "text": "Tính giá trị khi bình phương"
+        },
+        {
+          "key": "D",
+          "text": "Tính giá trị t"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định hệ số hồi quy không dùng F, chi bình phương và Z chuẩn hóa mà dùng t-student nên sẽ tính giá trị t.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định t"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "61",
+      "number": "61",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Phương pháp ước lượng GLS",
+      "options": [
+        {
+          "key": "A",
+          "text": "Luôn giải quyết được vấn đề phương sai sai số thay đổi của mô hình hồi quy"
+        },
+        {
+          "key": "B",
+          "text": "Có thể được dùng để giải quyết vấn đề phương sai sai số thay đổi của mô hình hồi quy"
+        },
+        {
+          "key": "C",
+          "text": "Là trường hợp đặc biệt của OLS"
+        },
+        {
+          "key": "D",
+          "text": "Là phương pháp bình phương tối thiểu có trọng số"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phương pháp bình phương tối thiểu tổng quát có thể được sử dụng để giải quyết vấn đề phương sai sai số thay đổi của mô hình hồi quy khi xác định được sự biến đổi của phương sai sai số theo các yếu tố đã biết.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "GLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "62",
+      "number": "62",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Mô hình hồi quy có nhiều hơn một biến độc lập được sử dụng để dự báo biến phụ thuộc gọi là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mô hình phụ thuộc"
+        },
+        {
+          "key": "B",
+          "text": "Mô hình hồi quy đơn biến"
+        },
+        {
+          "key": "C",
+          "text": "Mô hình độc lập"
+        },
+        {
+          "key": "D",
+          "text": "Mô hình hồi quy đa biến"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Mô hình có từ hai biến độc lập trở lên gọi là mô hình hồi quy đa biến (hồi quy bội).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "hồi quy bội"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "63",
+      "number": "63",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Trong mô hình hồi quy hai biến hệ số xác định $R^2$ thể hiện:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phần trăm dao động của biến X được giải thích bởi sai số ngẫu nhiên u trong mô hình"
+        },
+        {
+          "key": "B",
+          "text": "Phần trăm dao động của biến Y được giải thích bởi biến X trong mô hình"
+        },
+        {
+          "key": "C",
+          "text": "Phần trăm dao động của biến Y được giải thích bởi sai số ngẫu nhiên u trong mô hình"
+        },
+        {
+          "key": "D",
+          "text": "Phần trăm dao động của biến X được giải thích bởi biến Y trong mô hình"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$R^2 = \\frac{ESS}{TSS}$\nNghĩa là hệ số xác định $R^2$ thể hiện phần trăm dao động của biến Y được giải thích bởi biến X trong mô hình.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "R²"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "64",
+      "number": "64",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Giả thiết về phương sai sai số thuần nhất nghĩa là",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phương sai có điều kiện của sai số ngẫu nhiên thay đổi"
+        },
+        {
+          "key": "B",
+          "text": "Phương sai có điều kiện của sai số ngẫu nhiên không đổi"
+        },
+        {
+          "key": "C",
+          "text": "Phương sai của sai số ngẫu nhiên thay đổi"
+        },
+        {
+          "key": "D",
+          "text": "Phương sai của sai số ngẫu nhiên không đổi"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$var(u_i|X_i) = var(u_j|X_j) = \\sigma^2$ là một hằng số không đổi.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "giả thiết OLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "65",
+      "number": "65",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Kiểm định Breusch – Pagan trong STATA sử dụng biến nào là biến độc lập trong mô hình hồi quy phụ kiểm tra hiện tượng phương sai sai số thay đổi?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Biến độc lập"
+        },
+        {
+          "key": "B",
+          "text": "Biến phụ thuộc"
+        },
+        {
+          "key": "C",
+          "text": "Giá trị ước lượng của biến phụ thuộc"
+        },
+        {
+          "key": "D",
+          "text": "Phần dư"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định Breusch – Pagan giả định phương sai sai số thay đổi theo các biến Z nào đó. Trong STATA, Z được sử dụng chính là giá trị ước lượng của biến phụ thuộc.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Breusch-Pagan",
+        "STATA"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "66",
+      "number": "66",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Cho hình dưới đây, đây là phân phối nào?",
+      "figure": "Đường cong hình chuông đối xứng, trục tung ghi $f(t)$, trục hoành ghi $t$. Phần diện tích ở đuôi bên phải, từ điểm $t_{\\alpha,v}$ trở đi, được tô màu và ghi chú $\\alpha$.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phân phối của $Y_i$"
+        },
+        {
+          "key": "B",
+          "text": "Phân phối của $U_i$"
+        },
+        {
+          "key": "C",
+          "text": "Phân phối của các ước lượng"
+        },
+        {
+          "key": "D",
+          "text": "Phân phối của t"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "t tuân theo phân phối Student.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phân phối t"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "67",
+      "number": "67",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Hệ số xác định bội $R^2$ trong mô hình:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bằng phần trăm thay đổi trong giá trị của phần dư trong mô hình"
+        },
+        {
+          "key": "B",
+          "text": "Bằng phần trăm thay đổi trong giá trị của các biến độc lập trong mô hình"
+        },
+        {
+          "key": "C",
+          "text": "Bằng phần trăm thay đổi trong giá trị của biến phụ thuộc được giải thích bởi mô hình"
+        },
+        {
+          "key": "D",
+          "text": "Bằng phần trăm thay đổi của mô hình"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "$R^2 = ESS/TSS$: tỉ lệ biến động của biến phụ thuộc được giải thích bởi các biến độc lập trong mô hình.",
+      "answerSource": "document",
+      "note": "File không có giải thích cho câu này (giải thích do AI viết).",
+      "tags": [
+        "R²"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "68",
+      "number": "68",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Khi kiểm định giả thuyết cho một hệ số hồi quy riêng biệt cách nào có thể được sử dụng",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tính giá trị F"
+        },
+        {
+          "key": "B",
+          "text": "Tính giá trị Z chuẩn hóa"
+        },
+        {
+          "key": "C",
+          "text": "Tính giá trị khi bình phương"
+        },
+        {
+          "key": "D",
+          "text": "Tìm giá trị p-value"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định hệ số hồi quy không dùng F, chi bình phương và Z chuẩn hóa mà dùng t-student nên sẽ tính giá trị t hoặc phương pháp tính khoảng tin cậy hoặc phương pháp p-value.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "p-value"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "69",
+      "number": "69",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Để khắc phục hiện tượng phương sai sai số thay đổi, ta sử dụng phương pháp bình phương tối thiểu có trọng số. Phương pháp này:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Làm cho tổng của bình phương các phần dư đạt giá trị nhỏ nhất"
+        },
+        {
+          "key": "B",
+          "text": "Gán cho những quan sát có sai số có phương sai lớn hơn một vai trò nhỏ hơn"
+        },
+        {
+          "key": "C",
+          "text": "Làm cho hệ số xác định đạt giá trị cao nhất"
+        },
+        {
+          "key": "D",
+          "text": "Gán cho những quan sát có sai số có phương sai lớn hơn một vai trò lớn hơn"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong phương pháp WLS, mỗi quan sát được gắn trọng số $w_i = \\frac{1}{\\sigma_i^2}$. Với quan sát có phương sai sai số lớn, tức là $\\sigma^2$ lớn thì trọng số của nó sẽ nhỏ và ngược lại.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "WLS",
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "70",
+      "number": "70",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Mô hình hồi quy tuyến tính là",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mô hình chỉ phi tuyến tính trong các tham số"
+        },
+        {
+          "key": "B",
+          "text": "Mô hình chỉ tuyến tính trong các biến số"
+        },
+        {
+          "key": "C",
+          "text": "Mô hình phi tuyến tính trong các tham số nhưng tuyến tính trong biến số"
+        },
+        {
+          "key": "D",
+          "text": "Mô hình tuyến tính trong các tham số nhưng có thể phi tuyến tính theo biến số"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hồi quy tuyến tính chỉ yêu cầu mô hình tuyến tính trong các tham số, không yêu cầu tuyến tính trong biến số.",
+      "answerSource": "document",
+      "note": "File không có giải thích cho câu này (giải thích do AI viết).",
+      "tags": [
+        "dạng hàm"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "71",
+      "number": "71",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Mô hình hồi quy giữa biến doanh thu (Y, đơn vị \\$1,000), biến giá ($X_1$, đơn vị \\$) và chi phí quảng cáo ($X_2$, đơn vị \\$) có dạng hàm như sau: $\\hat{Y} = 7 - 3X_1 + 5X_2$. Hệ số của biến $X_2$ cho biết nếu chi phí quảng cáo tăng lên \\$1 (giá không đổi) thì doanh thu trung bình sẽ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tăng lên \\$12,000"
+        },
+        {
+          "key": "B",
+          "text": "Giảm đi \\$2,000"
+        },
+        {
+          "key": "C",
+          "text": "Tăng lên \\$5,000"
+        },
+        {
+          "key": "D",
+          "text": "Tăng lên \\$5"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Nếu không tính ảnh hưởng của các yếu tố khác, nếu $X_2$ tăng lên một đơn vị thì giá trị trung bình của Y sẽ tăng một lượng đúng bằng hệ số của $X_2$ trong mô hình.",
+      "answerSource": "document",
+      "note": "Nghi đáp án của file sai: Y tính theo đơn vị \\$1,000 nên hệ số 5 nghĩa là doanh thu trung bình tăng **\\$5,000** (phương án C) — giống cách giải câu 12 của Đề 4197. Vẫn giữ đáp án D như file.",
+      "tags": [
+        "diễn giải hệ số"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "72",
+      "number": "72",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Khuyết tật nào sau đây chỉ có ở mô hình hồi quy bội?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phương sai sai số thay đổi và tự tương quan"
+        },
+        {
+          "key": "B",
+          "text": "Tự tương quan"
+        },
+        {
+          "key": "C",
+          "text": "Phương sai sai số thay đổi"
+        },
+        {
+          "key": "D",
+          "text": "Đa cộng tuyến"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Đa cộng tuyến liên quan đến mối tương quan giữa các biến độc lập, do vậy chỉ xảy ra với mô hình có nhiều hơn một biến độc lập (là các mô hình hồi quy bội).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "đa cộng tuyến"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "73",
+      "number": "73",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Trong công thức tính hệ số hồi quy góc ước lượng ở mô hình hồi quy mẫu hai biến $(\\hat{\\beta}_2)$, $y_i$ và $x_i$ là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chênh lệch giữa giá trị thực của biến ở từng quan sát với giá trị trung bình mẫu của biến"
+        },
+        {
+          "key": "B",
+          "text": "Giá trị thực của từng quan sát"
+        },
+        {
+          "key": "C",
+          "text": "Chênh lệch giữa giá trị được dự đoán của biến ở từng quan sát với giá trị trung bình mẫu của biến"
+        },
+        {
+          "key": "D",
+          "text": "Chênh lệch giữa giá trị thực và giá trị được dự đoán của từng quan sát"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong công thức tính hệ số hồi quy góc ước lượng ở mô hình hồi quy mẫu hai biến $(\\hat{\\beta}_2)$, $y_i = Y_i - \\bar{Y}$; $x_i = X_i - \\bar{X}$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "OLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "74",
+      "number": "74",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Tổng bình phương tất cả các sai lệch giữa giá trị thực tế với giá trị ước lượng theo mô hình của Y được ký hiệu là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "RSS (residual sum of squares)"
+        },
+        {
+          "key": "B",
+          "text": "MSS (mean sum of squares)"
+        },
+        {
+          "key": "C",
+          "text": "TSS (total sum of squares)"
+        },
+        {
+          "key": "D",
+          "text": "ESS (explained sum of squares)"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "$RSS = \\sum e_i^2 = \\sum (Y_i - \\hat{Y}_i)^2$",
+      "answerSource": "document",
+      "note": "File không có giải thích cho câu này (giải thích do AI viết).",
+      "tags": [
+        "RSS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "75",
+      "number": "75",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Số liệu mảng là dạng dữ liệu:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Là số liệu về nhiều đối tượng trong cùng một khoảng thời gian"
+        },
+        {
+          "key": "B",
+          "text": "Giống như dữ liệu chuỗi thời gian"
+        },
+        {
+          "key": "C",
+          "text": "Thường bao gồm nhóm kiểm soát và nhóm tác động"
+        },
+        {
+          "key": "D",
+          "text": "Kết hợp giữa số liệu chéo vào chuỗi thời gian"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Dữ liệu mảng có chiều thời gian và chiều dữ liệu chéo.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "loại dữ liệu"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "76",
+      "number": "76",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Ta gọi biến X là cân nặng của quả dưa hấu. Khi cân thử mười lăm quả dưa hấu ở một trang trại trồng trọt ta tính được $\\bar{x} = 3{,}62$ kg và $s^2 = 0{,}01$. Chủ trang trại này tuyên bố trọng lượng trung bình của quả dưa hấu là 3,5 kg thì tuyên bố này có đáng tin với mức ý nghĩa $\\alpha = 1\\%$ không? Ta biết giá trị tới hạn $c = 2{,}58$.",
+      "options": [
+        {
+          "key": "A",
+          "text": "$t_s > c$, ta bác bỏ giả thuyết không"
+        },
+        {
+          "key": "B",
+          "text": "Không có đủ thông tin để kiểm định khẳng định của chủ trang trại"
+        },
+        {
+          "key": "C",
+          "text": "$t_s < c$, ta chấp nhận giả thuyết không"
+        },
+        {
+          "key": "D",
+          "text": "$t_s > c$, ta chấp nhận giả thuyết không"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Giả thuyết cần kiểm định là: $H_0: m = 3.5$; $H_1: m \\neq 3.5$\nVà ta tính được thống kê t cho kiểm định này là:\n$$t_s = \\frac{(3.62 - 3.5) \\times \\sqrt{15}}{0{,}1} = 4{,}6$$\n$|t_s| > 2.58$ (giá trị tới hạn) nên ta bác bỏ giả thuyết $H_0$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định trung bình"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "77",
+      "number": "77",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Với mức ý nghĩa bằng $\\alpha = 5\\%$, có $F_{0,05}(3, 37) = 2.839$. Mô hình này có phù hợp không?",
+      "context": "Giả sử có kết quả ước lượng như sau:\n$$CT = 55.37 + 0.78\\,TN + 0.08\\,TS + 0.09\\,TNP + e_i$$\n$(se) = (13{,}4)\\ (0{,}4)\\ (0{,}02)\\ (0{,}19)$\n\n$R^2 = 0{,}84$; $n = 41$",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mô hình trên là phù hợp vì $F_s$ lớn"
+        },
+        {
+          "key": "B",
+          "text": "Mô hình trên là phù hợp vì $F_s$ nhỏ"
+        },
+        {
+          "key": "C",
+          "text": "Mô hình trên là không phù hợp vì $F_s$ nhỏ"
+        },
+        {
+          "key": "D",
+          "text": "Mô hình trên là không phù hợp vì $F_s$ lớn"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Ta có cặp giả thuyết\n$H_0$: Mô hình phù hợp; $H_1$: Mô hình không phù hợp\n$$F_s = \\frac{R^2}{1 - R^2} \\times \\frac{n-k}{k-1} = \\frac{0{,}84}{1 - 0{,}84} \\times \\frac{41-4}{4-1} = 64{,}75$$\n$F_{(3,37)} = 2.839$\n$F_s > 2.839$, bác bỏ $H_0$ nên mô hình phù hợp.",
+      "answerSource": "document",
+      "note": "Lời giải trong file viết ngược cặp giả thuyết; đúng phải là $H_0$: mô hình **không** phù hợp ($\\beta_2 = \\beta_3 = \\beta_4 = 0$), $H_1$: mô hình phù hợp. Kết luận không đổi.",
+      "tags": [
+        "kiểm định F"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "78",
+      "number": "78",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Giả thiết về tính không đồng nhất trong giá trị của X ở tất cả các quan sát nghĩa là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Không có sự dao động trong giá trị của biến X ở tất cả quan sát"
+        },
+        {
+          "key": "B",
+          "text": "Giá trị của X ở tất cả quan sát bằng nhau"
+        },
+        {
+          "key": "C",
+          "text": "Giá trị của X ở tất cả quan sát khác nhau"
+        },
+        {
+          "key": "D",
+          "text": "Có sự dao động trong giá trị của biến X ở tất cả quan sát"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phân tích hồi quy phân tích sự phụ thuộc giữa các biến số, nghĩa là chúng ta muốn biết sự dao động trong giá trị của X, ảnh hưởng như thế nào trong giá trị Y. Do vậy nếu giá trị của biến X đồng nhất ở tất cả các quan sát thì không thể phân tích được.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "giả thiết OLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "79",
+      "number": "79",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Số quan sát trong mẫu này, n bằng bao nhiêu:",
+      "context": "Ta có bảng số liệu sau đây về số xe đi qua trạm thu phí, biến X (xe/ ngày) trong thời gian gần đây như sau:\n\n| X | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|\n| Số ngày | 10 | 35 | 45 | 36 | 10 | 8 |",
+      "options": [
+        {
+          "key": "A",
+          "text": "146"
+        },
+        {
+          "key": "B",
+          "text": "144"
+        },
+        {
+          "key": "C",
+          "text": "140"
+        },
+        {
+          "key": "D",
+          "text": "142"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$n = 10 + 35 + 45 + 36 + 10 + 8 = 144$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kích thước mẫu"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "80",
+      "number": "80",
+      "section": "Đề 4198",
+      "type": "single",
+      "question": "Trong mô hình hồi quy bội: $Y_i = \\beta_1 + \\beta_2 X_{2i} + \\beta_3 X_{3i} + u_i$, hệ số góc của biến $X_{2i}$:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phản ánh ảnh hưởng riêng phần của $X_{2i}$ lên $Y_i$ khi $X_{2i}$ thay đổi 1 đơn vị"
+        },
+        {
+          "key": "B",
+          "text": "Thường nhận giá trị dương"
+        },
+        {
+          "key": "C",
+          "text": "Lớn hơn giá trị hệ số của $X_{1i}$"
+        },
+        {
+          "key": "D",
+          "text": "Sẽ được tính vào kích cỡ của phương sai"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong mô hình hồi quy bội hệ số góc của $X_{2i}$ cho biết tác động riêng của $X_{2i}$ lên biến phụ thuộc Y. Khi $X_2$ tăng lên một đơn vị và giữ nguyên $X_3$, giá trị trung bình của Y sẽ tăng lên $\\beta_2$ đơn vị.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "diễn giải hệ số"
+      ],
+      "difficulty": "easy"
+    }
+  ]
+}

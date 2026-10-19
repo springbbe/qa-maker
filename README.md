@@ -17,7 +17,7 @@ Muốn thử ngay: bấm **✨ Dùng thử đề mẫu** → chọn một đề 
 1. Lấy JSON AI trả về (đúng định dạng bên dưới), lưu thành file trong thư mục [`samples/`](samples/), ví dụ `samples/toan-cao-cap-de-1.json`.
 2. Thêm tên file vào [`samples/index.json`](samples/index.json):
    ```json
-   { "samples": ["kinh-te-luong-cuoi-ky.json", "toan-cao-cap-de-1.json"] }
+   { "samples": ["kinh-te-luong-de-so-01.json", "toan-cao-cap-de-1.json"] }
    ```
    Có thể ghi đè tên/môn/mô tả hiển thị: `{ "file": "toan-cao-cap-de-1.json", "title": "Toán cao cấp – Đề 1" }`.
 3. Commit & push. Người dùng đã thêm đề mẫu trước đó sẽ thấy nút **🔄 Cập nhật** khi file thay đổi (tiến độ giữ nguyên theo `id` câu).

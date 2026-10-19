@@ -1,0 +1,486 @@
+{
+  "format": "qa-maker",
+  "version": 1,
+  "title": "Đề 4193",
+  "subject": "Kinh tế lượng",
+  "description": "Đề 4193 trong file “ĐỀ ÔN THI KINH TẾ LƯỢNG CUỐI KỲ – ĐH Ngoại thương (studocu)”. Thứ tự và số câu giữ nguyên như trong file để dễ đối chiếu. Câu 10–20 trong file chỉ có câu hỏi (không có phương án, không có đáp án) nên được chuyển thành câu tự luận với lời giải do AI viết; câu 17 trong file để trống nên bỏ qua.",
+  "language": "vi",
+  "passages": [],
+  "questions": [
+    {
+      "id": "1",
+      "number": "1",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Nếu giá trị kiểm định d của Durbin - Watson tiến gần đến 0, hệ số tự tương quan bậc 1 có giá trị",
+      "options": [
+        {
+          "key": "A",
+          "text": "tiến gần đến -1"
+        },
+        {
+          "key": "B",
+          "text": "tiến gần đến 1"
+        },
+        {
+          "key": "C",
+          "text": "tiến gần đến 0"
+        },
+        {
+          "key": "D",
+          "text": "tiến gần đến 1 hoặc -1"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Ta có: $d = 2(1 - \\rho)$\nVậy d tiến gần đến 0 khi $\\rho$ tiến gần đến 1",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Durbin-Watson"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "2",
+      "number": "2",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Nguyên nhân nào sau đây có thể gây ra tự tương quan trong mô hình hồi quy",
+      "options": [
+        {
+          "key": "A",
+          "text": "quan sát ngoại lai"
+        },
+        {
+          "key": "B",
+          "text": "kỹ thuật thu nhập số liệu được cải thiện"
+        },
+        {
+          "key": "C",
+          "text": "phương pháp thu nhập mẫu không phù hợp"
+        },
+        {
+          "key": "D",
+          "text": "tính ì của các chuỗi thời gian kinh tế"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Các chuỗi thời gian kinh tế thường biến đổi chậm chạp. Bắt đầu từ đáy của sự suy thoái, các chuỗi này (ví dụ GDP) bắt đầu chuyển động lên trên. Trong nhánh đi lên này, giá trị của một chuỗi tại một thời điểm lớn hơn giá trị trước đó của nó. Khi đến đỉnh, chúng lại bắt đầu từ từ giảm dần cho đến đáy rồi lại từ từ đi lên. Điều này đồng nghĩa với việc sai số ngẫu nhiên cũng sẽ biến đổi từ từ, chậm chạp theo 1 hình thái nhất định chứ không ngẫu nhiên.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "tự tương quan"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "3",
+      "number": "3",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Đâu **KHÔNG** phải là một nguyên nhân của khuyết tật tự tương quan?",
+      "options": [
+        {
+          "key": "A",
+          "text": "quan sát ngoại lai"
+        },
+        {
+          "key": "B",
+          "text": "hiện tượng trễ"
+        },
+        {
+          "key": "C",
+          "text": "nhào nặn dữ liệu"
+        },
+        {
+          "key": "D",
+          "text": "hiện tượng mạng nhện"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Nguyên nhân của tự tương quan bao gồm: các nguyên nhân khách quan (tính ỳ của số liệu, hiện tượng trễ, hiện tượng mạng nhện) và các nguyên nhân chủ quan (xác định sai mô hình, nhào nặn dữ liệu). Sự xuất hiện của các quan sát ngoại lai không phải là nguyên nhân của tự tương quan.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "tự tương quan"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "4",
+      "number": "4",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Hiện tượng xảy ra trong thị trường nông sản khi cung nông sản trong thời kỳ t phản ứng theo giá nông sản trong thời kỳ trước đó, gây ra tự tương quan trong mô hình hồi quy được gọi là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "hiện tượng phản ứng chậm"
+        },
+        {
+          "key": "B",
+          "text": "hiện tượng trễ"
+        },
+        {
+          "key": "C",
+          "text": "hiện tượng ì"
+        },
+        {
+          "key": "D",
+          "text": "hiện tượng mạng nhện Cobweb"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hiện tượng mạng nhện Cobweb là hiện tượng thường xảy ra trong thị trường nông sản, khi cung nông sản phản ứng chậm một thời điểm so với giá nông sản, ví dụ như người nông dân quyết định sản lượng trồng lúa theo giá bán lúa ở năm trước (giá năm trước cao thì năm nay trồng nhiều, giá năm trước thấp thì năm nay trồng ít).\n- Hiện tượng trễ là khi giá trị của biến phụ thuộc vào chính biến đó ở trong quá khứ.\n- Hiện tượng ỳ là khi số liệu kinh tế vĩ mô biến đổi chậm, không ngẫu nhiên.\n- Không có hiện tượng phản ứng chậm.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "tự tương quan",
+        "Cobweb"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "5",
+      "number": "5",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Hiện tượng tự tương quan trong mô hình hồi quy là gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "là khi biến phụ thuộc có tương quan với trễ của nó"
+        },
+        {
+          "key": "B",
+          "text": "là khi các biến độc lập có tương quan với nhau"
+        },
+        {
+          "key": "C",
+          "text": "là khi biến độc lập có tương quan với sai số ngẫu nhiên"
+        },
+        {
+          "key": "D",
+          "text": "là khi các sai số ngẫu nhiên có tương quan với nhau"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Tự tương quan là hiện tượng tương quan xảy ra giữa các sai số ngẫu nhiên của mô hình với nhau (tương quan xảy ra cùng một chuỗi), sai số ngẫu nhiên của quan sát này có tương quan tuyến tính với sai số ngẫu nhiên của quan sát khác).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "tự tương quan"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "6",
+      "number": "6",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Giá trị thống kê d trong kiểm định Durbin - Watson nằm trong khoảng nào sau đây?",
+      "options": [
+        {
+          "key": "A",
+          "text": "$-2 \\le d \\le 2$"
+        },
+        {
+          "key": "B",
+          "text": "$-1 \\le d \\le 1$"
+        },
+        {
+          "key": "C",
+          "text": "$0 \\le d \\le 2$"
+        },
+        {
+          "key": "D",
+          "text": "$0 \\le d \\le 4$"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Ta có: $d = 2(1 - \\rho)$\nDo $-1 \\le \\rho \\le 1$ nên $0 \\le d \\le 4$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Durbin-Watson"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "7",
+      "number": "7",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Khi dùng kiểm định Breusch - Godfrey để kiểm định hiện tượng tự tương quan bậc 2 trong mô hình hồi quy gốc, giá trị kiểm định khi bình phương với bậc tự do là bao nhiêu",
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Giá trị kiểm định Lagrange Multiplier Test tuân theo phân phối khi bình phương với bậc tự do là bậc tự tương quan đang được kiểm định.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Breusch-Godfrey"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "8",
+      "number": "8",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Đâu **KHÔNG** phải là một nguyên nhân của khuyết tật phương sai sai số thay đổi",
+      "options": [
+        {
+          "key": "A",
+          "text": "mô hình bỏ sót biến"
+        },
+        {
+          "key": "B",
+          "text": "hiện tượng mạng nhện"
+        },
+        {
+          "key": "C",
+          "text": "kỹ thuật thu thập số liệu được cải thiện"
+        },
+        {
+          "key": "D",
+          "text": "quan sát ngoại lai"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hiện tượng mạng nhện là nguyên nhân của tự tương quan, không phải là nguyên nhân của phương sai sai số thay đổi.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "9",
+      "number": "9",
+      "section": "Đề 4193",
+      "type": "single",
+      "question": "Khi phương sai của các nhiễu ngẫu nhiên không bằng nhau hiện tượng này gọi là",
+      "options": [
+        {
+          "key": "A",
+          "text": "phương sai sai số thay đổi"
+        },
+        {
+          "key": "B",
+          "text": "đa cộng tuyến"
+        },
+        {
+          "key": "C",
+          "text": "tự tương quan"
+        },
+        {
+          "key": "D",
+          "text": "phương sai sai số không đổi"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phương sai sai số thay đổi là hiện tượng xảy ra khi phương sai của các nhiễu ngẫu nhiên (sai số ngẫu nhiên) tương ứng với các giá trị quan sát được của biến độc lập không giống nhau.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "10",
+      "number": "10",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Phương sai sai số thay đổi là gì?",
+      "answer": "Phương sai sai số thay đổi là hiện tượng phương sai của sai số ngẫu nhiên $u_i$ không bằng nhau ứng với các giá trị khác nhau của biến độc lập:\n$$var(u_i|X_i) = \\sigma_i^2 \\neq \\sigma^2$$\nĐây là sự vi phạm giả thiết phương sai sai số không đổi của mô hình hồi quy tuyến tính cổ điển.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "11",
+      "number": "11",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Trong kiểm định White, biến phụ thuộc của mô hình hồi quy phụ là biến nào sau đây?",
+      "answer": "Biến phụ thuộc của mô hình hồi quy phụ trong kiểm định White là **bình phương phần dư** $e_i^2$ thu được từ việc ước lượng mô hình gốc bằng OLS. Các biến độc lập của hồi quy phụ gồm các biến độc lập gốc, bình phương của chúng (và các tích chéo nếu dùng White có tích chéo).",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "kiểm định White"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "12",
+      "number": "12",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Nếu mô hình hồi quy có 4 biến độc lập, khi dùng kiểm định White sử dụng các phần dư từ mô hình hồi quy ước lượng, mô hình hồi quy phụ có bao nhiêu biến độc lập?",
+      "answer": "- White **có tích chéo**: 4 biến gốc + 4 bình phương + $C_4^2 = 6$ tích chéo = **14** biến độc lập.\n- White **không có tích chéo**: 4 biến gốc + 4 bình phương = **8** biến độc lập.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "kiểm định White"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "13",
+      "number": "13",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Phương pháp ước lượng GLS",
+      "answer": "GLS (bình phương nhỏ nhất tổng quát) là phương pháp biến đổi mô hình gốc (thường chia hai vế cho một đại lượng tỉ lệ với độ lệch chuẩn của sai số, hay dùng trọng số) để mô hình mới có sai số thỏa mãn giả thiết phương sai không đổi, rồi áp dụng OLS cho mô hình đã biến đổi.\n- GLS có thể dùng để giải quyết vấn đề phương sai sai số thay đổi (và tự tương quan) khi biết được dạng biến đổi của phương sai sai số theo các yếu tố đã biết.\n- Bình phương nhỏ nhất có trọng số (WLS) là một trường hợp đặc biệt của GLS; OLS là trường hợp đặc biệt của GLS khi phương sai không đổi.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "GLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "14",
+      "number": "14",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Nếu mô hình hồi quy gốc có 3 biến độc lập, khi dùng kiểm định White sử dụng các phần dư từ mô hình hồi quy ước lượng, mô hình hồi quy phụ có bao nhiêu biến độc lập",
+      "answer": "- White **có tích chéo**: 3 biến gốc + 3 bình phương + $C_3^2 = 3$ tích chéo = **9** biến độc lập.\n- White **không có tích chéo**: 3 biến gốc + 3 bình phương = **6** biến độc lập.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "kiểm định White"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "15",
+      "number": "15",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Kiểm định nào sau đây có thể được dùng để kiểm định phương sai sai số thay đổi?",
+      "answer": "Có thể dùng **kiểm định Breusch – Pagan**, **kiểm định White** (ngoài ra: kiểm định Park, Glejser, Goldfeld – Quandt). Các kiểm định này dùng hồi quy phụ với biến phụ thuộc là bình phương (hoặc trị tuyệt đối) của phần dư.\n\nLưu ý: Durbin – Watson và Breusch – Godfrey dùng để kiểm định tự tương quan; RESET dùng để kiểm định dạng hàm.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "16",
+      "number": "16",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Đâu là nguyên nhân của hiện tượng đa cộng tuyến",
+      "answer": "Một số nguyên nhân thường gặp:\n- Bản chất các biến độc lập có quan hệ với nhau (ví dụ thu nhập và tài sản).\n- Phương pháp thu thập dữ liệu: mẫu chỉ lấy trong một phạm vi hẹp của các biến độc lập.\n- Dạng mô hình: đưa vào các số hạng đa thức ($X$, $X^2$, $X^3$...), đặc biệt khi X biến động ít.\n- Mô hình có quá nhiều biến độc lập so với số quan sát.\n- Dữ liệu chuỗi thời gian có cùng xu thế theo thời gian.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "đa cộng tuyến"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "18",
+      "number": "18",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Đa cộng tuyến trong mô hình hồi quy là gì?",
+      "answer": "Đa cộng tuyến là hiện tượng các **biến độc lập** trong mô hình hồi quy bội có tương quan tuyến tính với nhau.\n- Đa cộng tuyến hoàn hảo: tồn tại quan hệ tuyến tính chính xác giữa các biến độc lập (hệ số tương quan bằng ±1) ⇒ không ước lượng được các hệ số.\n- Đa cộng tuyến không hoàn hảo: phần lớn (không phải 100%) biến động của một biến độc lập được giải thích bởi các biến độc lập khác.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "đa cộng tuyến"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "19",
+      "number": "19",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Đa cộng tuyến không hoàn hảo có hậu quả gì với kết quả ước lượng?",
+      "answer": "- Ước lượng OLS vẫn là **BLUE** nhưng phương sai và sai số chuẩn của các hệ số **lớn** ⇒ ước lượng kém chính xác.\n- Khoảng tin cậy rộng, thống kê $t$ nhỏ ⇒ dễ kết luận hệ số không có ý nghĩa thống kê dù $R^2$ cao.\n- Hệ số ước lượng nhạy cảm với thay đổi nhỏ của dữ liệu, có thể sai dấu so với lý thuyết kinh tế.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "đa cộng tuyến"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "20",
+      "number": "20",
+      "section": "Đề 4193",
+      "type": "essay",
+      "question": "Dấu hiệu của hiện tượng đa cộng tuyến là",
+      "answer": "- $R^2$ cao nhưng nhiều hệ số có thống kê $t$ nhỏ (không có ý nghĩa thống kê), trong khi kiểm định F cho mô hình có ý nghĩa.\n- Hệ số tương quan cặp giữa các biến độc lập cao (thường > 0,8).\n- Hồi quy phụ một biến độc lập theo các biến độc lập còn lại có $R_j^2$ cao; nhân tử phóng đại phương sai $VIF_j = \\frac{1}{1 - R_j^2}$ lớn (thường > 10).\n- Hệ số ước lượng thay đổi mạnh / đổi dấu khi thêm bớt biến hoặc quan sát.",
+      "explanation": "",
+      "answerSource": "ai",
+      "note": "Trong file chỉ có câu hỏi, không có phương án và đáp án; lời giải do AI viết.",
+      "tags": [
+        "đa cộng tuyến"
+      ],
+      "difficulty": "medium"
+    }
+  ]
+}

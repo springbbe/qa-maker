@@ -1,0 +1,1460 @@
+{
+  "format": "qa-maker",
+  "version": 1,
+  "title": "Đề 4200",
+  "subject": "Kinh tế lượng",
+  "description": "Đề 4200 trong file “ĐỀ ÔN THI KINH TẾ LƯỢNG CUỐI KỲ – ĐH Ngoại thương (studocu)”. Số câu giữ nguyên như trong file (file đánh số tiếp từ câu 121) để dễ đối chiếu.",
+  "language": "vi",
+  "passages": [],
+  "questions": [
+    {
+      "id": "121",
+      "number": "121",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Mức độ biến động trong giá trị của biến độc lập $\\sum x_1^2$ ảnh hưởng đến độ chính xác của ước lượng như thế nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mức độ biến động trong giá trị của biến độc lập càng lớn, hệ số hồi quy ước lượng càng không chính xác."
+        },
+        {
+          "key": "B",
+          "text": "kích thước mẫu không ảnh hưởng đến độ chính xác của hệ số hồi quy ước lượng."
+        },
+        {
+          "key": "C",
+          "text": "mức độ biến động trong giá trị của biến độc lập càng nhỏ, hệ số hồi quy ước lượng càng chính xác."
+        },
+        {
+          "key": "D",
+          "text": "mức độ biến động trong giá trị của biến độc lập càng lớn, hệ số hồi quy ước lượng càng chính xác."
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Khi mức độ biến động trong giá trị của biến độc lập càng lớn, phương sai của các hệ số hồi quy ước lượng càng nhỏ.\n⇒ Hệ số hồi quy ước lượng càng chính xác.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai ước lượng"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "122",
+      "number": "122",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong bài toán kiểm định, khi viết cặp giả thuyết cho kiểm định 2 phía thì:",
+      "options": [
+        {
+          "key": "A",
+          "text": "$H_0$ phải có dấu $=$"
+        },
+        {
+          "key": "B",
+          "text": "$H_0$ phải có dấu $<$"
+        },
+        {
+          "key": "C",
+          "text": "$H_0$ phải có dấu $\\neq$"
+        },
+        {
+          "key": "D",
+          "text": "$H_0$ phải có dấu $>$"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Cặp giả thuyết cho kiểm định 2 phía có dạng:\n$H_0: B_j = \\beta_j^*$; $H_1: B_j \\neq \\beta_j^*$",
+      "answerSource": "document",
+      "note": "Nghi đáp án của file sai: chính lời giải của file cho thấy $H_0$ mang dấu $=$ (phương án A), dấu $\\neq$ thuộc về $H_1$. Vẫn giữ đáp án C như file.",
+      "tags": [
+        "kiểm định giả thuyết"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "123",
+      "number": "123",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong bài toán kiểm định, giả thuyết $H_0$ không thể có:",
+      "options": [
+        {
+          "key": "A",
+          "text": "dấu $\\le$"
+        },
+        {
+          "key": "B",
+          "text": "dấu $\\ge$"
+        },
+        {
+          "key": "C",
+          "text": "dấu $\\neq$"
+        },
+        {
+          "key": "D",
+          "text": "dấu $=$"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Theo khi viết cặp giả thuyết, giả thuyết $H_0$ phải có dấu $=$ ($\\le$, $\\ge$) nhưng không thể có dấu khác.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định giả thuyết"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "124",
+      "number": "124",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Đâu là nguyên nhân của hiện tượng đa cộng tuyến?",
+      "options": [
+        {
+          "key": "A",
+          "text": "phương pháp thu thập mẫu không phù hợp"
+        },
+        {
+          "key": "B",
+          "text": "quan sát ngoại lai"
+        },
+        {
+          "key": "C",
+          "text": "sai số ngẫu nhiên không có phân phối chuẩn"
+        },
+        {
+          "key": "D",
+          "text": "hiện tượng trễ"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hiện tượng đa cộng tuyến có xảy ra nếu phương pháp thu thập mẫu không phù hợp, mẫu không phản ánh tổng thể. Tương quan giữa các biến độc lập trong mẫu cao nhưng tương quan giữa chúng không cao như vậy nếu xét trong toàn bộ tổng thể.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "đa cộng tuyến"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "125",
+      "number": "125",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Giả sử có mô hình hồi quy $Y_i = B_0 + B_1 X_1 + B_2 X_2 + B_3 X_3 + B_4 X_4 + U_i$. Có ý kiến cho rằng có thể bỏ $X_2$, $X_3$ ra khỏi mô hình, vậy cặp giả thuyết kiểm định là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "$H_0: B_2 = B_3$; $H_1: B_3 \\neq 0$"
+        },
+        {
+          "key": "B",
+          "text": "$H_0: B_2 = 0$; $H_1: B_3 \\neq 0$"
+        },
+        {
+          "key": "C",
+          "text": "$H_0: B_2 = B_3 = 0$; $H_1: B_2^2 + B_3^2 \\neq 0$"
+        },
+        {
+          "key": "D",
+          "text": "$H_0: B_3 = 0$; $H_1: B_2 \\neq 0$"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định có thể bỏ $X_2$, $X_3$ ra khỏi mô hình là kiểm định đồng thời xem liệu $B_2 = B_3 = 0$.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định F",
+        "thu hẹp hồi quy"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "126",
+      "number": "126",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Mô hình $Y_i = B_1 + B_2 X_2 + u_i$ là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "mô hình tuyến tính theo cả tham số và biến số."
+        },
+        {
+          "key": "B",
+          "text": "mô hình phi tuyến tính trong các tham số nhưng tuyến tính theo biến số."
+        },
+        {
+          "key": "C",
+          "text": "mô hình tuyến tính chỉ theo biến số."
+        },
+        {
+          "key": "D",
+          "text": "mô hình tuyến tính chỉ theo các tham số."
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong mô hình có tham số là $B_1$, $B_2$ biến độc lập là X nên đây là mô hình tuyến tính theo cả tham số và biến số.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "dạng hàm"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "127",
+      "number": "127",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Giá trị $t_s$ cho biến TS bằng bao nhiêu?",
+      "context": "Giả sử có kết quả ước lượng như sau:\n$$CT = 55{,}37 + 0{,}78\\,TN + 0{,}08\\,TS + 0{,}09\\,TNP + e_i$$\n$Se = (13{,}4)\\ (0{,}4)\\ (0{,}02)\\ (0{,}19)$\n\n$R^2 = 0{,}84$; $n = 41$\n\n$t^{41} = 2{,}701$; $t^{38} = 2{,}712$; $t^{37} = 2{,}715$",
+      "options": [
+        {
+          "key": "A",
+          "text": "1,95"
+        },
+        {
+          "key": "B",
+          "text": "0,47"
+        },
+        {
+          "key": "C",
+          "text": "4,13"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "$$t_s = \\frac{\\hat{\\beta}_3}{se(\\hat{\\beta}_3)} = \\frac{0{,}08}{0{,}02} = 4$$",
+      "answerSource": "document",
+      "note": "File không đánh dấu phương án nào cho câu này; đáp án được suy ra từ phần giải thích của file.",
+      "tags": [
+        "thống kê t"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "128",
+      "number": "128",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Biết hiệp phương sai giữa 2 hệ số ước lượng của age và educ gần bằng 0. Với mức ý nghĩa $\\alpha = 5\\%$, $t_{(0,05;\\,931)} = 1{,}96$. Có ý kiến cho rằng tác động của age và exper đến wage là như nhau, vậy cặp giả thuyết cần kiểm định là:",
+      "context": "Giả sử có kết quả ước lượng như sau:\n$$Wage = 1940{,}38 + 12{,}55\\,age + 71{,}43\\,educ + 12{,}13\\,exper + e_i$$\n$se = (152{,}1)\\ (4{,}73)\\ (6{,}53)\\ (3{,}77)$\n\n$n = 935$",
+      "options": [
+        {
+          "key": "A",
+          "text": "$H_0: B_4 = 0$; $H_1: B_4 \\neq 0$"
+        },
+        {
+          "key": "B",
+          "text": "$H_0: B_2 = B_4$; $H_1: B_4 \\neq B_2$"
+        },
+        {
+          "key": "C",
+          "text": "$H_0: B_2 = 0$; $H_1: B_2 \\neq 0$"
+        },
+        {
+          "key": "D",
+          "text": "$H_0: B_2 = B_4 = 0$; $H_1: \\beta_2^2 + \\beta_4^2 \\neq 0$"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định xem ảnh hưởng của age và exper đến wage là như nhau khi $B_2 = B_4$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "so sánh hệ số"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "129",
+      "number": "129",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Cho a là hằng số, và X là biến số. Như vậy, $var(aX)$ bằng:",
+      "options": [
+        {
+          "key": "A",
+          "text": "$a^2 var(X)$"
+        },
+        {
+          "key": "B",
+          "text": "$a\\,var(aX)$"
+        },
+        {
+          "key": "C",
+          "text": "0"
+        },
+        {
+          "key": "D",
+          "text": "$var(a) + var(X)$"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Theo tính chất của phương sai:\n$var(aX) = a^2 var(X)$ với a là hằng số và X là biến số",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phương sai"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "130",
+      "number": "130",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Để đo lường mức độ tương quan giữa 2 biến, ta sử dụng:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hệ số góc"
+        },
+        {
+          "key": "B",
+          "text": "hệ số tương quan bội"
+        },
+        {
+          "key": "C",
+          "text": "hệ số tương quan đơn"
+        },
+        {
+          "key": "D",
+          "text": "hệ số chặn"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hệ số tương quan đơn cho biết chiều và mức độ tương quan tuyến tính giữa 2 biến.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "hệ số tương quan"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "131",
+      "number": "131",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Kiểm định sự phù hợp của mô hình là xác định:",
+      "options": [
+        {
+          "key": "A",
+          "text": "liệu tất cả các hệ số, bao gồm cả hệ số chặn, là đồng thời = 0"
+        },
+        {
+          "key": "B",
+          "text": "liệu mô hình có được ước lượng chính xác hay không"
+        },
+        {
+          "key": "C",
+          "text": "liệu có cần thêm biến độc lập bổ sung cho mô hình"
+        },
+        {
+          "key": "D",
+          "text": "liệu tất cả các hệ số, không bao gồm hệ số chặn, là đồng thời = 0"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định sự phù hợp của mô hình là kiểm định cặp giả thuyết $H_0$: Tất cả các hệ số góc bằng nhau và bằng 0 (mô hình không phù hợp); $H_1$: Tồn tại ít nhất 1 hệ số góc khác 0 (mô hình phù hợp).",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định F"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "132",
+      "number": "132",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Phương pháp ước lượng OLS:",
+      "options": [
+        {
+          "key": "A",
+          "text": "là trường hợp đặc biệt của ols"
+        },
+        {
+          "key": "B",
+          "text": "luôn giải quyết được vấn đề phương sai sai số thay đổi của mô hình hồi quy"
+        },
+        {
+          "key": "C",
+          "text": "có thể được dùng để giải quyết vấn đề phương sai sai số thay đổi của mô hình hồi quy"
+        },
+        {
+          "key": "D",
+          "text": "là phương pháp bình phương tối thiểu có trọng số"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Phương pháp bình phương tối thiểu tổng quát có thể được sử dụng để giải quyết vấn đề phương sai sai số thay đổi của mô hình hồi quy khi xác định được sự biến đổi phương sai sai số theo các yếu tố đã biết.",
+      "answerSource": "document",
+      "note": "Câu hỏi trong file ghi \"Phương pháp ước lượng OLS\" nhưng các phương án và lời giải đều nói về GLS (xem câu 61 Đề 4198); nhiều khả năng là lỗi đánh máy của \"GLS\".",
+      "tags": [
+        "GLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "133",
+      "number": "133",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Theo kết quả hồi quy trên có $R^2 = 0{,}991$ có nghĩa là:",
+      "context": "Khảo sát sự liên hệ giữa sản lượng Y (đơn vị tấn/ha) theo phân bón hóa học $X_2$ (đơn vị tấn/ha) và thuốc trừ sâu $X_3$ (đơn vị lít/ha). Với số liệu gồm 10 quan sát, người ta ước lượng được mô hình sau:\n$$\\hat{Y} = 32{,}300 + 1{,}576 X_2 + 1{,}203 X_3$$\n$(1{,}4445)\\ (0{,}2214)\\ (0{,}2367)$\n\n$R^2 = 0{,}991$",
+      "options": [
+        {
+          "key": "A",
+          "text": "99,1% sản lượng trung bình được giải thích bởi lượng phân bón hóa học."
+        },
+        {
+          "key": "B",
+          "text": "99,1% sản lượng trung bình được giải thích bởi lượng thuốc trừ sâu."
+        },
+        {
+          "key": "C",
+          "text": "99,1% sản lượng trung bình được giải thích bởi lượng phân bón hóa học và thuốc trừ sâu."
+        },
+        {
+          "key": "D",
+          "text": "99,1% sản lượng được giải thích bởi lượng phân bón hóa học."
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hệ số $R^2$ cho biết phần trăm thay đổi của biến phụ thuộc được giải thích bởi tất cả các biến độc lập trong mô hình.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "R²"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "134",
+      "number": "134",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Đâu **không** phải là 1 nguyên nhân của khuyết tật phương sai sai số thay đổi?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mô hình bỏ sót biến"
+        },
+        {
+          "key": "B",
+          "text": "kỹ thuật thu thập số liệu được cải thiện"
+        },
+        {
+          "key": "C",
+          "text": "hiện tượng mạng nhện"
+        },
+        {
+          "key": "D",
+          "text": "quan sát ngoại lai"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Hiện tượng mạng nhện là nguyên nhân của tự tương quan, không phải là nguyên nhân của phương sai sai số thay đổi.",
+      "answerSource": "document",
+      "note": "Trong file các phương án của câu này được đánh nhầm là e, f, g, h.",
+      "tags": [
+        "phương sai sai số thay đổi"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "135",
+      "number": "135",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Sai số ngẫu nhiên (ký hiệu là u) trong hàm hồi quy tổng thể được hình thành từ nguyên nhân nào?",
+      "options": [
+        {
+          "key": "A",
+          "text": "nhà nghiên cứu biết hết các yếu tố ảnh hưởng đến biến phụ thuộc"
+        },
+        {
+          "key": "B",
+          "text": "nhà nghiên cứu có thể đưa đủ các biến giải thích vào hàm hồi quy"
+        },
+        {
+          "key": "C",
+          "text": "nhà nghiên cứu không thể có số liệu cho mọi biến số"
+        },
+        {
+          "key": "D",
+          "text": "nhà nghiên cứu có thể có số liệu cho mọi biến số"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong hàm hồi quy tổng thể, u được gọi là sai số ngẫu nhiên đại diện cho những nhân tố có ảnh hưởng đến biến phụ thuộc nhưng không được đưa vào mô hình hồi quy. 1 trong những nguyên nhân là do nhà nghiên cứu không thể thu thập được số liệu cho mọi biến số.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "sai số ngẫu nhiên"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "136",
+      "number": "136",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Cho mô hình hồi quy đa biến có dạng $\\hat{Y} = 7 + 2X_1 + 9X_2$. Nếu $X_1$ tăng lên 1 đơn vị ($X_2$ không đổi), thì giá trị kỳ vọng của Y sẽ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "tăng lên 2 đơn vị"
+        },
+        {
+          "key": "B",
+          "text": "giảm xuống 2 đơn vị"
+        },
+        {
+          "key": "C",
+          "text": "tăng lên 9 đơn vị"
+        },
+        {
+          "key": "D",
+          "text": "giảm đi 9 đơn vị"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Nếu không tính ảnh hưởng của yếu tố khác, nếu $X_1$ tăng lên 1 đơn vị thì giá trị kỳ vọng của Y sẽ tăng lên 1 lượng chính bằng hệ số của $X_1$ trong mô hình.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "diễn giải hệ số"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "137",
+      "number": "137",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Nếu $X \\sim N(\\mu, \\sigma^2)$ thì $Z = \\frac{X - \\mu_x}{\\sigma}$ có phân phối chuẩn hóa. Phương án nào sau đây **sai**?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nếu Z = 1 thì X thấp hơn $\\mu_x$ đúng 1 độ lệch chuẩn"
+        },
+        {
+          "key": "B",
+          "text": "Nếu Z = 0 thì $X = m_x$"
+        },
+        {
+          "key": "C",
+          "text": "Nếu Z = 2,5 thì X cao hơn $\\mu_x$ đúng 2,5 độ lệch chuẩn"
+        },
+        {
+          "key": "D",
+          "text": "Nếu Z = -1 thì X thấp hơn $\\mu_x$ đúng 1 độ lệch chuẩn"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Nếu Z = 0 thì $X - m_x = 0$ như vậy $X = m_x$\nNếu Z = 2,5 thì $X - m_x = 2{,}5s$ hay X cao hơn m đúng 2,5 độ lệch chuẩn\nNếu Z = -1 thì $X - m_x = -s$ hay $X = m_x - s$: X thấp hơn $m_x$ đúng 1 độ lệch chuẩn",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phân phối chuẩn"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "138",
+      "number": "138",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Nếu giá trị kiểm định d của Durbin-Watson tiến gần đến 0, hệ số tự tương quan bậc 1 có giá trị:",
+      "options": [
+        {
+          "key": "A",
+          "text": "tiến gần đến -1"
+        },
+        {
+          "key": "B",
+          "text": "tiến gần đến 1 hoặc -1"
+        },
+        {
+          "key": "C",
+          "text": "tiến gần đến 1"
+        },
+        {
+          "key": "D",
+          "text": "tiến gần đến 0"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Ta có $d = 2(1 - \\rho)$\nVậy d tiến gần đến 0 khi $\\rho$ tiến gần đến 1",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Durbin-Watson"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "139",
+      "number": "139",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Tổng bình phương tổng thể (Total Sum of Square) thể hiện:",
+      "options": [
+        {
+          "key": "A",
+          "text": "tổng bình phương tất cả các sai lệch giữa giá trị ước lượng của y với giá trị trung bình của nó."
+        },
+        {
+          "key": "B",
+          "text": "tổng bình phương tất cả các sai lệch giữa giá trị thực tế với giá trị ước lượng của nó."
+        },
+        {
+          "key": "C",
+          "text": "tổng bình phương tất cả các sai lệch giữa giá trị trung bình của y với giá trị ước lượng của nó."
+        },
+        {
+          "key": "D",
+          "text": "tổng bình phương tất cả các sai lệch giữa giá trị thực tế của y với giá trị trung bình của nó."
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": true,
+      "explanation": "Công thức tính tổng bình phương tổng thể là: $TSS = \\sum (Y_i - \\bar{Y})^2$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "TSS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "140",
+      "number": "140",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Với mức ý nghĩa $\\alpha = 1\\%$, bằng phương pháp khoảng tin cậy, hệ số hồi quy của biến TNP có ý nghĩa thống kê hay không?",
+      "context": "Giả sử có kết quả ước lượng như sau:\n$$CT = 55{,}37 + 0{,}78\\,TN + 0{,}08\\,TS + 0{,}09\\,TNP + e_i$$\n$Se = (13{,}4)\\ (0{,}4)\\ (0{,}02)\\ (0{,}19)$\n\n$R^2 = 0{,}84$; $n = 41$\n\n$t^{41} = 2{,}701$; $t^{38} = 2{,}712$; $t^{37} = 2{,}715$",
+      "options": [
+        {
+          "key": "A",
+          "text": "có vì 0 thuộc khoảng tin cậy"
+        },
+        {
+          "key": "B",
+          "text": "có vì 0 không thuộc khoảng tin cậy"
+        },
+        {
+          "key": "C",
+          "text": "không vì 0 thuộc khoảng tin cậy"
+        },
+        {
+          "key": "D",
+          "text": "không vì 0 không thuộc khoảng tin cậy"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Ta có cặp giả thuyết: $H_0: B_2 = 0$; $H_1: B_2 \\neq 0$\nKhoảng tin cậy 2 phía của hệ số hồi quy nằm trong khoảng:\n$$\\left(\\hat{\\beta}_2 - t_{\\alpha/2}^{n-k} se(\\hat{\\beta}_2);\\ \\hat{\\beta}_2 + t_{\\alpha/2}^{n-k} se(\\hat{\\beta}_2)\\right) = (0{,}78 - 2{,}715 \\times 0{,}4;\\ 0{,}78 + 2{,}715 \\times 0{,}4) = (-0{,}36;\\ 1{,}866)$$",
+      "answerSource": "document",
+      "note": "Lời giải trong file lại tính khoảng tin cậy cho biến TN ($\\hat{\\beta}_2$). Với biến TNP: $(0{,}09 \\pm 2{,}715 \\times 0{,}19) = (-0{,}426;\\ 0{,}606)$, cũng chứa 0 nên kết luận C không đổi.",
+      "tags": [
+        "khoảng tin cậy",
+        "ý nghĩa thống kê"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "141",
+      "number": "141",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "$f(x)$ là hàm mật độ xác suất của biến ngẫu nhiên liên tục X thì phương án nào sau đây **không** đúng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\sum f(x) = 1$"
+        },
+        {
+          "key": "B",
+          "text": "$\\int_a^b f(x)\\,dx = P(a \\le x \\le b)$"
+        },
+        {
+          "key": "C",
+          "text": "$\\int_{-\\infty}^{+\\infty} f(x)\\,dx = 1$"
+        },
+        {
+          "key": "D",
+          "text": "$f(x) \\ge 0$"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "$f(x) \\ge 0$; $\\int_a^b f(x)\\,dx = P(a \\le x \\le b)$; $\\int_{-\\infty}^{+\\infty} f(x)\\,dx = 1$ đều là đặc điểm của hàm mật độ xác suất của biến ngẫu nhiên liên tục. Phương án $\\sum f(x) = 1$ là đặc điểm của biến ngẫu nhiên rời rạc.",
+      "answerSource": "document",
+      "note": "File viết dấu tích phân thành $\\Sigma$ ở phương án B, C; đã chuyển thành $\\int$.",
+      "tags": [
+        "hàm mật độ"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "142",
+      "number": "142",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Khi kiểm định giả thuyết cho 1 hệ số hồi quy riêng biệt, cách nào có thể được sử dụng?",
+      "options": [
+        {
+          "key": "A",
+          "text": "tính giá trị f"
+        },
+        {
+          "key": "B",
+          "text": "tính giá trị khi bình phương"
+        },
+        {
+          "key": "C",
+          "text": "tính giá trị p-value"
+        },
+        {
+          "key": "D",
+          "text": "tính giá trị z chuẩn hóa"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định hệ số hồi quy không dùng kiểm định F, chi bình phương, và Z chuẩn hóa mà dùng t-student nên sẽ tính giá trị t hoặc phương pháp tính khoảng tin cậy hoặc phương pháp p-value.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "p-value"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "143",
+      "number": "143",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Đồ thị sau đây là đồ thị của phân phối nào?",
+      "figure": "Đường cong hình chuông đối xứng quanh 0, trục hoành chia vạch từ -3 đến 3. Các vùng được tô đậm dần vào giữa và có chú thích: khoảng (-1; 1) chiếm 68%, (-2; 2) chiếm 95%, (-3; 3) chiếm 99%.",
+      "options": [
+        {
+          "key": "A",
+          "text": "chuẩn hóa"
+        },
+        {
+          "key": "B",
+          "text": "đều"
+        },
+        {
+          "key": "C",
+          "text": "fisher"
+        },
+        {
+          "key": "D",
+          "text": "khi bình phương"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Nhìn vào đồ thị này ta thấy phân phối này có giá trị kỳ vọng bằng 0 và phương sai bằng 1. Như vậy đây là đồ thị của phân phối chuẩn hóa.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phân phối chuẩn hóa"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "144",
+      "number": "144",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Kiểm định Breusch-Godfrey dùng để kiểm định tự tương quan trong mô hình hồi quy tới bậc bao nhiêu?",
+      "options": [
+        {
+          "key": "A",
+          "text": "chỉ tới bậc 3"
+        },
+        {
+          "key": "B",
+          "text": "chỉ tới bậc 2"
+        },
+        {
+          "key": "C",
+          "text": "chỉ tới bậc 1"
+        },
+        {
+          "key": "D",
+          "text": "tới bậc p bất kỳ"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Kiểm định Breusch-Godfrey dùng để kiểm định tự tương quan ở bậc bất kỳ.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Breusch-Godfrey"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "145",
+      "number": "145",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Giả thiết về phương sai sai số thuần nhất nghĩa là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "phương sai có điều kiện của sai số ngẫu nhiên thay đổi."
+        },
+        {
+          "key": "B",
+          "text": "phương sai có điều kiện của sai số ngẫu nhiên không đổi."
+        },
+        {
+          "key": "C",
+          "text": "phương sai của sai số ngẫu nhiên không đổi."
+        },
+        {
+          "key": "D",
+          "text": "phương sai của sai số ngẫu nhiên thay đổi."
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Giả thiết về phương sai sai số thuần nhất nghĩa là $var(U_1/X_1) = \\sigma^2$ là một hằng số không đổi.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "giả thiết OLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "146",
+      "number": "146",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Dấu hiệu của hiện tượng đa cộng tuyến là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "các ước lượng không thay đổi nhiều khi 1 biến độc lập bị loại khỏi mô hình."
+        },
+        {
+          "key": "B",
+          "text": "$VIF > 10$ với $VIF_j = \\frac{1}{1 - R^2}$"
+        },
+        {
+          "key": "C",
+          "text": "giá trị t ứng với các biến quan trọng rất lớn"
+        },
+        {
+          "key": "D",
+          "text": "ma trận phương sai-hiệp phương sai chứa các giá trị rất nhỏ"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$VIF_j = \\frac{1}{1 - R^2}$ với $R^2$ là hệ số xác định của mô hình hồi quy ứng có biến phụ thuộc là $X_j$ và biến độc lập là các biến độc lập còn lại của mô hình hồi quy ban đầu.\nVIF > 10 thì hiện tượng đa cộng tuyến nghiêm trọng, ảnh hưởng đến kết quả ước lượng mô hình.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "đa cộng tuyến",
+        "VIF"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "147",
+      "number": "147",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong mô hình hồi quy bội, hệ số xác định $R^2$ sẽ tăng nếu:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 biến giải thích được thêm vào mô hình trừ phi xảy ra hiện tượng phương sai sai số thay đổi."
+        },
+        {
+          "key": "B",
+          "text": "1 biến giải thích được thêm vào mô hình trừ phi hệ số của biến này bằng 0"
+        },
+        {
+          "key": "C",
+          "text": "Giá trị tuyệt đối của 1 biến giải thích > 1,96"
+        },
+        {
+          "key": "D",
+          "text": "1 biến giải thích được thêm vào mô hình"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$R^2$ là hàm tăng theo số biến độc lập trong mô hình.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "R²"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "148",
+      "number": "148",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong mô hình hồi quy bội, việc đánh giá ảnh hưởng của biến độc lập $X_i$ lên sự thay đổi của biến phụ thuộc $Y_i$ khi giữ nguyên ảnh hưởng của các biến độc lập khác sẽ:",
+      "options": [
+        {
+          "key": "A",
+          "text": "không có nhiều ý nghĩa vì trong thế giới thực tất cả các biến đều thay đổi."
+        },
+        {
+          "key": "B",
+          "text": "phù hợp với việc tính đạo hàm từng phần trong toán học."
+        },
+        {
+          "key": "C",
+          "text": "giúp việc tính toán hệ số ước lượng của 1 biến giải thích cụ thể không bị ảnh hưởng."
+        },
+        {
+          "key": "D",
+          "text": "phù hợp với nguyên lý mutatis mutandis (cho phép các yếu tố được thay đổi tương ứng) trong kinh tế học."
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": true,
+      "explanation": "Hệ số của các biến độc lập là nghiệm của bài toán cực trị tìm $\\min \\sum e_i^2$. Theo đó biểu thức này đạt giá trị cực tiểu nếu đạo hàm cấp 1 = 0 và đạo hàm cấp 2 > 0.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "hồi quy bội"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "149",
+      "number": "149",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Tổng bình phương tất cả các sai lệch giữa giá trị thực tế của Y với giá trị trung bình của nó được ký hiệu là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ESS"
+        },
+        {
+          "key": "B",
+          "text": "TSS"
+        },
+        {
+          "key": "C",
+          "text": "MSS"
+        },
+        {
+          "key": "D",
+          "text": "RSS"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$TSS = \\sum (Y_i - \\bar{Y})^2$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "TSS"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "150",
+      "number": "150",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Mô hình hồi quy giữa biến doanh thu (Y, đơn vị 1,000\\$), biến giá ($X_1$, đơn vị \\$) và chi phí quảng cáo ($X_2$, đơn vị \\$) có dạng hàm như sau: $\\hat{Y} = 7 - 3X_1 + 5X_2$. Hệ số của biến giá ($X_1$) cho biết:",
+      "options": [
+        {
+          "key": "A",
+          "text": "nếu giá giảm xuống \\$1 (chi phí quảng cáo giữ nguyên) thì doanh thu sẽ giảm đi \\$3"
+        },
+        {
+          "key": "B",
+          "text": "nếu giá tăng lên \\$1 (chi phí quảng cáo giữ nguyên) thì doanh thu trung bình sẽ giảm đi \\$3,000"
+        },
+        {
+          "key": "C",
+          "text": "nếu giá tăng lên \\$1 (chi phí quảng cáo giữ nguyên) thì doanh thu sẽ tăng \\$4,000"
+        },
+        {
+          "key": "D",
+          "text": "nếu giá tăng lên \\$1 (chi phí quảng cáo giữ nguyên) thì doanh thu sẽ tăng \\$3"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Do $X_1$ trong trường hợp này mang dấu âm nên Y và $X_1$ có quan hệ ngược chiều nên $X_1$ tăng lên 1 đơn vị thì giá trị trung bình của Y sẽ giảm 1 lượng chính bằng hệ số của $X_1$ trong mô hình, không tính ảnh hưởng của yếu tố khác.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "diễn giải hệ số"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "151",
+      "number": "151",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong mô hình hồi quy tuyến tính, $U_i$ tuân theo phân phối chuẩn là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "$U_i$ có kỳ vọng bằng 0 và phương sai thay đổi."
+        },
+        {
+          "key": "B",
+          "text": "$U_i$ có kỳ vọng bằng 0 và phương sai không đổi."
+        },
+        {
+          "key": "C",
+          "text": "$U_i$ có kỳ vọng là hằng số và phương sai không đổi."
+        },
+        {
+          "key": "D",
+          "text": "$U_i$ có kỳ vọng là hằng số và phương sai thay đổi."
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "$U_i \\sim N(0, s^2)$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "giả thiết OLS",
+        "phân phối chuẩn"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "152",
+      "number": "152",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Gọi X là số xe ô tô qua trạm thu phí trong 1 ngày. Biến X là biến:",
+      "options": [
+        {
+          "key": "A",
+          "text": "liên tục"
+        },
+        {
+          "key": "B",
+          "text": "nhị phân"
+        },
+        {
+          "key": "C",
+          "text": "không đủ thông tin để xác định loại biến của biến x"
+        },
+        {
+          "key": "D",
+          "text": "rời rạc"
+        }
+      ],
+      "answer": [
+        "D"
+      ],
+      "fixedOrder": false,
+      "explanation": "Biến X là số xe qua trạm thu phí một ngày là biến rời rạc, biến này có tập hợp các kết quả có thể đếm được hoặc xác định được.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "biến ngẫu nhiên"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "153",
+      "number": "153",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong bài toán kiểm định, khi viết cặp giả thuyết cho kiểm định 1 phía thì:",
+      "options": [
+        {
+          "key": "A",
+          "text": "$H_0$ phải có dấu lớn"
+        },
+        {
+          "key": "B",
+          "text": "$H_0$ phải có dấu nhỏ"
+        },
+        {
+          "key": "C",
+          "text": "$H_0$ phải có dấu bằng"
+        },
+        {
+          "key": "D",
+          "text": "$H_0$ phải có dấu khác"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Cặp giả thuyết cho kiểm định 1 phía có dạng:\n- phía phải: $H_0: B_j \\le B_j^*$ ($B_j = B_j^*$); $H_1: B_j > B_j^*$\n- phía trái: $H_0: B_j \\ge B_j^*$ ($B_j = B_j^*$); $H_1: B_j < B_j^*$\n\nDo đó, giả thuyết $H_0$ cho kiểm định 1 phía là dấu =",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định giả thuyết"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "154",
+      "number": "154",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong phương pháp OLS, thay vì chỉ cần $\\sum_{i=1}^{n} e_i$ đạt giá trị nhỏ nhất, Gauss lại chuyển thành $\\sum_{i=1}^{n} e_i^2$ đạt giá trị nhỏ nhất để:",
+      "options": [
+        {
+          "key": "A",
+          "text": "trong toán học, bài toán có các biến số ở dạng bậc 1 khó tìm cực trị hơn."
+        },
+        {
+          "key": "B",
+          "text": "trong toán học, bài toán có các biến số ở dạng bình phương dễ tìm cực trị hơn."
+        },
+        {
+          "key": "C",
+          "text": "khắc phục vấn đề triệt tiêu về dấu giữa các giá trị e"
+        },
+        {
+          "key": "D",
+          "text": "các biến số độc lập quan trọng được thể hiện rõ ảnh hưởng hơn."
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Ta có công thức: $e_i = Y_i - \\hat{Y}_i$ thể hiện sự chênh lệch giữa giá trị thực tế và giá trị ước lượng. Vấn đề triệt tiêu dấu có thể xảy ra dẫn đến $\\sum_{i=1}^{n} e_i$ có giá trị không chính xác. Ví dụ $e_1 = 10$, $e_2 = -10$ dẫn đến tổng của $e_1$ và $e_2$ bằng 0 nhưng thực tế khoảng cách giữa $Y_i$, $\\hat{Y}_i$ không phải là 0. Nhưng khi chuyển thành $e_i^2$, ta có thể khắc phục được nhược điểm này.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "OLS"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "155",
+      "number": "155",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Nếu $X \\sim N(\\mu; \\sigma^2)$ nhưng không biết $s^2$, khi đó:",
+      "options": [
+        {
+          "key": "A",
+          "text": "X tuân theo quy luật phân phối F"
+        },
+        {
+          "key": "B",
+          "text": "$\\frac{X - \\mu}{s} \\sim T_{n-1}$"
+        },
+        {
+          "key": "C",
+          "text": "X tuân theo quy luật phân phối chuẩn hóa"
+        },
+        {
+          "key": "D",
+          "text": "X tuân theo quy luật phân phối poisson"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Nếu $X \\sim N(\\mu; \\sigma^2)$ nhưng không biết $s^2$ khi đó $\\frac{X - \\mu}{s} \\sim T_{n-1}$",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "phân phối t"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "156",
+      "number": "156",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Các biến nào sau đây là ví dụ của biến ngẫu nhiên liên tục?",
+      "options": [
+        {
+          "key": "A",
+          "text": "số xe qua trạm thu phí một ngày"
+        },
+        {
+          "key": "B",
+          "text": "nhiệt độ tại hà nội ở 1 thời điểm nào đó"
+        },
+        {
+          "key": "C",
+          "text": "số cuộc gọi của khách hàng đến đường dây nóng"
+        },
+        {
+          "key": "D",
+          "text": "số sinh viên theo học lớp kinh tế lượng năm 2019 tại FTU"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Các phương án còn lại đều là ví dụ của biến ngẫu nhiên rời rạc vì các biến này có tập hợp các kết quả có thể đếm được hoặc xác định. Duy nhất phương án \"nhiệt độ tại hà nội ở 1 thời điểm nào đó\" là biến liên tục vì biến nhận kết quả 1 số vô hạn.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "biến ngẫu nhiên"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "157",
+      "number": "157",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Kiểm định Durbin-Watson **không** có đặc điểm nào sau đây?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mất ý nghĩa khi giá trị trễ của biến phụ thuộc xuất hiện trong mô hình với vai trò là biến độc lập"
+        },
+        {
+          "key": "B",
+          "text": "vẫn thực hiện được nếu có quan sát bị mất"
+        },
+        {
+          "key": "C",
+          "text": "được dùng để kiểm định khuyết tật tự tương quan bậc 1 trong mô hình hồi quy"
+        },
+        {
+          "key": "D",
+          "text": "có giá trị thống kê d tiến gần tới 2 khi giả thuyết không là đúng"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trị thống kê d của kiểm định Durbin-Watson được tính theo công thức $d = \\frac{\\sum (e_i - e_{i-1})^2}{\\sum e_i^2}$. Ở đây để tính được chính xác giá trị của d thì cần chênh lệch giữa tất cả các cặp 2 thời kỳ liên tiếp trong bộ số liệu. Vì vậy, phải không có quan sát bị mất thì mới có thể tính được d.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "Durbin-Watson"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "158",
+      "number": "158",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Ta gọi biến X là cân nặng của quả dưa hấu. Khi cân thử 15 quả dưa hấu ở 1 trang trại trồng trọt, ta tính được $\\bar{x} = 3{,}62$ và $s^2 = 0{,}01$. Chủ trang trại này tuyên bố trọng lượng trung bình của quả dưa hấu là 3,5 kg thì tuyên bố này có đúng với mức ý nghĩa $\\alpha = 1\\%$ không? Ta biết giá trị tới hạn $c = 2{,}58$.",
+      "options": [
+        {
+          "key": "A",
+          "text": "không có đủ thông tin để kiểm định khẳng định của chủ trang trại."
+        },
+        {
+          "key": "B",
+          "text": "$t_s > c$, ta bác bỏ giả thuyết không."
+        },
+        {
+          "key": "C",
+          "text": "$t_s > c$, ta chấp nhận giả thuyết không."
+        },
+        {
+          "key": "D",
+          "text": "$t_s < c$, ta chấp nhận giả thuyết không."
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "fixedOrder": false,
+      "explanation": "Giả thuyết cần kiểm định là: $H_0: m = 3{,}5$; $H_1: m \\neq 3{,}5$\nVà ta tính được thống kê cho kiểm định này là:\n$$T_s = \\frac{(3{,}62 - 3{,}5) \\times \\sqrt{15}}{0{,}1} = 4{,}6$$\n$|t_s| > 2{,}58$ (giá trị tới hạn) nên ta bác bỏ giả thuyết không.",
+      "answerSource": "document",
+      "note": "",
+      "tags": [
+        "kiểm định trung bình"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "159",
+      "number": "159",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong bài toán kiểm định, giả thuyết $H_1$ không thể có dấu gì?",
+      "options": [
+        {
+          "key": "A",
+          "text": "dấu $<$"
+        },
+        {
+          "key": "B",
+          "text": "dấu $\\neq$"
+        },
+        {
+          "key": "C",
+          "text": "dấu $=$"
+        },
+        {
+          "key": "D",
+          "text": "dấu $>$"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "fixedOrder": false,
+      "explanation": "Giả thuyết đối ($H_0$) là phát biểu ngược với $H_1$ và được cho là đúng nếu $H_0$ bị bác bỏ.",
+      "answerSource": "document",
+      "note": "Lời giải trong file viết chưa chuẩn; ý đúng: $H_1$ (giả thuyết đối) là phát biểu ngược với $H_0$ và chỉ mang dấu $<$, $>$ hoặc $\\neq$; dấu $=$ thuộc về $H_0$.",
+      "tags": [
+        "kiểm định giả thuyết"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "160",
+      "number": "160",
+      "section": "Đề 4200",
+      "type": "single",
+      "question": "Trong hàm hồi quy, biến độc lập là:",
+      "options": [
+        {
+          "key": "A",
+          "text": "biến số nằm ở vế phải của phương trình"
+        },
+        {
+          "key": "B",
+          "text": "biến số nằm ở vế trái của phương trình"
+        },
+        {
+          "key": "C",
+          "text": "biến được giải thích"
+        },
+        {
+          "key": "D",
+          "text": "biến phản ứng"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "fixedOrder": false,
+      "explanation": "Trong hàm hồi quy, biến độc lập là biến số được cho là có tác động đến biến phụ thuộc, thường ký hiệu là X và nằm ở vế phải của phương trình. Biến phụ thuộc còn được gọi là biến giải thích hay biến điều khiển.",
+      "answerSource": "document",
+      "note": "Câu cuối trong lời giải của file nhầm: chính **biến độc lập** mới được gọi là biến giải thích hay biến điều khiển; biến phụ thuộc là biến được giải thích (biến phản ứng).",
+      "tags": [
+        "nhập môn"
+      ],
+      "difficulty": "easy"
+    }
+  ]
+}
