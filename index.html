@@ -3,32 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QA Maker – Test Page</title>
-  <style>
-    :root { --bg:#f7f7f8; --fg:#1d1d1f; --card:#fff; --accent:#2563eb; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#eee; --card:#1c1c1e; --accent:#60a5fa; } }
-    body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--fg);
-           display:flex; min-height:100vh; align-items:center; justify-content:center; padding:16px; box-sizing:border-box; }
-    .card { background:var(--card); border-radius:12px; padding:32px; max-width:480px; width:100%;
-            box-shadow:0 4px 20px rgba(0,0,0,.08); text-align:center; }
-    h1 { margin-top:0; }
-    button { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 20px; font-size:16px; cursor:pointer; }
-    #out { margin-top:16px; font-weight:600; }
-  </style>
+  <title>QA Maker – Luyện đề</title>
+  <meta name="description" content="Biến file PDF đề thi thành flashcard, bài luyện tập, thi thử... nhờ AI và JSON.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232459d6'/><text x='16' y='22' font-size='15' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'>QA</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Áp dụng theme sớm để tránh nháy màn hình
+    try { var t = JSON.parse(localStorage.getItem('qam:settings') || '{}').theme; if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
 <body>
-  <div class="card">
-    <h1>QA Maker 🚀</h1>
-    <p>Trang test GitHub Pages hoạt động!</p>
-    <button id="btn">Bấm thử</button>
-    <div id="out"></div>
-  </div>
-  <script>
-    let n = 0;
-    document.getElementById('btn').onclick = () => {
-      n++;
-      document.getElementById('out').textContent = 'Đã bấm ' + n + ' lần • ' + new Date().toLocaleTimeString();
-    };
-  </script>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/"><span class="brand-mark">QA</span> QA Maker</a>
+      <nav class="topnav">
+        <a href="#/" title="Thư viện bộ đề">📚 <span>Bộ đề</span></a>
+        <a href="#/import" title="Nhập đề mới">➕ <span>Nhập đề</span></a>
+        <button class="iconbtn" id="themeBtn" title="Đổi giao diện sáng/tối">🌓</button>
+      </nav>
+    </div>
+  </header>
+  <main id="app"><p class="muted">Đang tải…</p></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="assets/prompt.js"></script>
+  <script src="assets/sample.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 </html>
