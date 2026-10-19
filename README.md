@@ -10,7 +10,17 @@ flashcard, luyện tập, thi thử, ôn ngắt quãng, trò chơi… Không c�
 3. Copy nguyên câu trả lời của AI (có thể kèm ` ```json `) → dán vào trang **Nhập đề** → **Lưu & bắt đầu ôn**.
 4. File dài: AI sẽ chia phần và ghi “Còn tiếp — gõ 'tiếp'”. Gõ `tiếp`, dán phần sau, chọn **Gộp vào** bộ đề cũ.
 
-Muốn thử ngay: bấm **✨ Dùng thử đề mẫu** (33 câu trích từ đề Kinh tế lượng – ĐH Ngoại thương).
+Muốn thử ngay: bấm **✨ Dùng thử đề mẫu** → chọn một đề trong danh sách đề mẫu.
+
+## Thêm đề mẫu
+
+1. Lấy JSON AI trả về (đúng định dạng bên dưới), lưu thành file trong thư mục [`samples/`](samples/), ví dụ `samples/toan-cao-cap-de-1.json`.
+2. Thêm tên file vào [`samples/index.json`](samples/index.json):
+   ```json
+   { "samples": ["kinh-te-luong-cuoi-ky.json", "toan-cao-cap-de-1.json"] }
+   ```
+   Có thể ghi đè tên/môn/mô tả hiển thị: `{ "file": "toan-cao-cap-de-1.json", "title": "Toán cao cấp – Đề 1" }`.
+3. Commit & push. Người dùng đã thêm đề mẫu trước đó sẽ thấy nút **🔄 Cập nhật** khi file thay đổi (tiến độ giữ nguyên theo `id` câu).
 
 ## Các chế độ ôn
 
@@ -66,7 +76,7 @@ Bộ đọc JSON khá “dễ tính”: chấp nhận khối ` ```json `, lời 
 
 ```bash
 python3 -m http.server 8000
-# mở http://localhost:8000
+# mở http://localhost:8000  (cần web server để tải được đề mẫu; mở file:// trực tiếp sẽ không thấy đề mẫu)
 ```
 
 ## Cấu trúc
@@ -75,6 +85,7 @@ python3 -m http.server 8000
 index.html          khung trang + nạp thư viện CDN (KaTeX, marked, DOMPurify)
 assets/style.css    giao diện (sáng/tối, mobile)
 assets/prompt.js    prompt gửi cho AI → window.buildPrompt(extra)
-assets/sample.js    bộ đề mẫu (JSON đúng định dạng)
 assets/app.js       toàn bộ logic: lưu trữ, đọc JSON, hiển thị, các chế độ ôn
+samples/index.json  danh sách đề mẫu
+samples/*.json      các đề mẫu (JSON định dạng qa-maker)
 ```

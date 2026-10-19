@@ -110,7 +110,8 @@ label.field > span { display: block; font-size: .85rem; color: var(--muted); mar
 .steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 14px; top: 12px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: var(--accent-text); display: grid; place-items: center; font-weight: 700; font-size: .85rem; }
 .deck-card { cursor: pointer; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; transition: transform .12s, border-color .12s; }
 .deck-card:hover { border-color: var(--accent); transform: translateY(-1px); }
-.deck-card h3 { margin: 0; }
+.deck-card h3, .sample-card h3 { margin: 0; }
+.sample-card { display: flex; flex-direction: column; gap: 8px; }
 .bar { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
 .bar > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; transition: width .3s; }
 .bar.ok > i { background: var(--ok); }
@@ -273,3 +274,7 @@ table.data th { color: var(--muted); font-weight: 600; font-size: .8rem; }
   .card { box-shadow: none; border-color: #ccc; }
   main { padding: 0; max-width: none; }
 }
+
+/* Nút xoá trên thẻ bộ đề */
+.del-btn { margin: -4px -6px 0 0; font-size: 1rem; }
+.del-btn:hover { color: var(--bad); background: var(--bad-soft); }

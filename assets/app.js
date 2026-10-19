@@ -1499,7 +1499,7 @@
         <div class="row">
           <button class="btn primary lg" id="copyP">📋 Copy prompt</button>
           <a class="btn lg" href="#/import">➕ Nhập JSON</a>
-          <button class="btn lg ghost" id="demo">✨ Dùng thử đề mẫu</button>
+          <a class="btn lg ghost" href="#/samples">✨ Dùng thử đề mẫu</a>
         </div>
       </section>
       <section>
@@ -1512,23 +1512,31 @@
           if (!deck) return '';
           const s = deckStats(deck);
           const m = getMeta(d.id);
-          return `<a class="card deck-card" href="#/deck/${d.id}">
-            <h3>${esc(d.title)}</h3>
+          return `<div class="card deck-card" data-href="#/deck/${d.id}" tabindex="0" role="link">
+            <div class="row" style="align-items:flex-start;flex-wrap:nowrap"><h3 style="flex:1">${esc(d.title)}</h3><button class="iconbtn del-btn" data-del="${d.id}" title="Xoá bộ đề này" aria-label="Xoá bộ đề">🗑</button></div>
             <div class="chips">${d.subject ? `<span class="chip accent">${esc(d.subject)}</span>` : ''}<span class="chip">${s.total} câu</span>${s.wrong ? `<span class="chip bad">${s.wrong} câu sai</span>` : ''}${s.due ? `<span class="chip warn">${s.due} thẻ đến hạn</span>` : ''}</div>
             <div class="bar"><i style="width:${pct(s.done, s.total)}%"></i></div>
             <span class="muted small">Đã làm ${pct(s.done, s.total)}% · Đúng ${pct(s.ok, s.att)}% · ${m.lastStudied ? 'Ôn lần cuối ' + fmtDate(m.lastStudied) : 'Chưa ôn'}</span>
-          </a>`;
+          </div>`;
         }).join('')}</div>` : '<div class="card empty"><p style="font-size:2rem;margin:0">📭</p><p>Chưa có bộ đề nào. Hãy nhập JSON từ AI hoặc bấm <b>Dùng thử đề mẫu</b>.</p></div>'}
       </section>
     </div>`;
     $('#copyP').onclick = async () => toast((await copyText(window.buildPrompt(''))) ? '✅ Đã copy prompt! Giờ gửi kèm file PDF cho AI.' : 'Không copy được – hãy vào trang Nhập đề để copy thủ công.');
-    $('#demo').onclick = () => {
-      const r = parseImport(window.SAMPLE_DECK_JSON);
-      if (r.errors && r.errors.length) { toast('Lỗi đề mẫu: ' + r.errors[0]); return; }
-      const deck = Object.assign(r.deck, { id: uid(), createdAt: Date.now() });
-      saveDeck(deck);
-      location.hash = '#/deck/' + deck.id;
-    };
+    $$('.deck-card[data-href]').forEach((card) => {
+      card.onclick = (e) => {
+        const del = e.target.closest('[data-del]');
+        if (!del) { location.hash = card.dataset.href; return; }
+        e.stopPropagation();
+        const d = getIndex().find((x) => x.id === del.dataset.del);
+        if (!d) return;
+        if (confirm(`Xoá bộ đề “${d.title}” (${d.count} câu) cùng toàn bộ tiến độ ôn tập?\nThao tác này không thể hoàn tác.`)) {
+          deleteDeck(d.id);
+          toast('Đã xoá “' + d.title + '”');
+          viewHome();
+        }
+      };
+      card.onkeydown = (e) => { if (e.key === 'Enter' && e.target === card) location.hash = card.dataset.href; };
+    });
     if ($('#backup')) $('#backup').onclick = () => {
       const all = { format: 'qa-maker-backup', version: 1, exportedAt: new Date().toISOString(), decks: getIndex().map((d) => ({ deck: loadDeck(d.id), progress: getProg(d.id), meta: getMeta(d.id) })).filter((x) => x.deck) };
       download('qa-maker-backup-' + new Date().toISOString().slice(0, 10) + '.json', JSON.stringify(all));
@@ -1547,6 +1555,104 @@
         }
       } catch (err) { toast('File không hợp lệ: ' + err.message, 3500); }
     };
+  }
+
+  // ======================================================================
+  // Trang: Đề mẫu (đọc từ samples/index.json)
+  // ======================================================================
+  let samplesCache = null;
+  function hashText(t) { let h = 5381; for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) | 0; return (h >>> 0).toString(36); }
+
+  /** Tải danh sách đề mẫu: samples/index.json → { samples: ["file.json", { "file": "...", "title": "..." }] } */
+  async function loadSamples() {
+    if (samplesCache) return samplesCache;
+    const res = await fetch('samples/index.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('Không đọc được samples/index.json (HTTP ' + res.status + ')');
+    const man = await res.json();
+    const entries = (Array.isArray(man) ? man : man.samples || []).map((e) => (typeof e === 'string' ? { file: e } : e)).filter((e) => e && e.file);
+    const list = await Promise.all(entries.map(async (e) => {
+      try {
+        const r = await fetch('samples/' + e.file, { cache: 'no-cache' });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const text = await r.text();
+        const p = parseImport(text);
+        if (!p.deck || !p.deck.questions.length) throw new Error((p.errors || [])[0] || 'không có câu hỏi');
+        if (e.title) p.deck.title = e.title;
+        if (e.subject) p.deck.subject = e.subject;
+        if (e.description) p.deck.description = e.description;
+        return { file: e.file, deck: p.deck, hash: hashText(text) };
+      } catch (err) { return { file: e.file, error: err.message }; }
+    }));
+    samplesCache = list;
+    return list;
+  }
+
+  function addSample(sm) {
+    const deck = Object.assign(JSON.parse(JSON.stringify(sm.deck)), { id: uid(), createdAt: Date.now(), sampleFile: sm.file, sampleHash: sm.hash });
+    saveDeck(deck);
+    return deck;
+  }
+
+  async function viewSamples() {
+    current.deck = null;
+    const myHash = location.hash;
+    app.innerHTML = `<div class="stack">
+      <div class="row no-print"><a class="btn sm ghost" href="#/">← Thư viện</a></div>
+      <section class="card"><h1>✨ Đề mẫu</h1>
+        <p class="muted">Chọn một bộ đề có sẵn để thêm vào thư viện và ôn ngay. Tiến độ ôn được lưu riêng trên trình duyệt của bạn.</p>
+        <input type="search" id="kw" class="hidden" placeholder="🔍 Tìm đề mẫu theo tên, môn học…" style="margin-top:8px">
+      </section>
+      <div id="sl"><div class="card empty">Đang tải danh sách đề mẫu…</div></div>
+    </div>`;
+    let list;
+    try { list = await loadSamples(); } catch (e) {
+      if (location.hash !== myHash) return;
+      $('#sl').innerHTML = `<div class="msg bad">Không tải được đề mẫu: ${esc(e.message)}.<br>Nếu bạn đang mở file <code>index.html</code> trực tiếp (file://), hãy chạy qua web server (GitHub Pages hoặc <code>python3 -m http.server</code>).</div>`;
+      return;
+    }
+    if (location.hash !== myHash) return; // người dùng đã chuyển trang
+    if (!list.length) { $('#sl').innerHTML = '<div class="card empty">Chưa có đề mẫu nào.</div>'; return; }
+
+    function render() {
+      const mine = getIndex().map((d) => loadDeck(d.id)).filter((d) => d && d.sampleFile);
+      const k = looseText(plain($('#kw').value));
+      const shown = list.filter((sm) => !k || looseText(plain([sm.file, sm.deck && sm.deck.title, sm.deck && sm.deck.subject, sm.deck && sm.deck.description].join(' '))).includes(k));
+      $('#sl').innerHTML = shown.length ? `<div class="grid">${shown.map((sm) => {
+        const i = list.indexOf(sm);
+        if (sm.error) return `<div class="card"><h3>${esc(sm.file)}</h3><div class="msg bad">Lỗi: ${esc(sm.error)}</div></div>`;
+        const d = sm.deck;
+        const types = {};
+        d.questions.forEach((q) => (types[q.type] = (types[q.type] || 0) + 1));
+        const secs = new Set(d.questions.map((q) => q.section).filter(Boolean)).size;
+        const have = mine.find((x) => x.sampleFile === sm.file);
+        const outdated = have && have.sampleHash !== sm.hash;
+        return `<div class="card sample-card">
+          <h3>${esc(d.title || sm.file)}</h3>
+          <div class="chips">${d.subject ? `<span class="chip accent">${esc(d.subject)}</span>` : ''}<span class="chip">${d.questions.length} câu</span>${secs > 1 ? `<span class="chip">${secs} phần</span>` : ''}${have ? '<span class="chip ok">✓ Đã có trong thư viện</span>' : ''}</div>
+          ${d.description ? `<p class="muted small">${esc(d.description)}</p>` : ''}
+          <div class="chips">${Object.keys(types).map((t) => `<span class="chip">${TYPE_LABEL[t]}: ${types[t]}</span>`).join('')}</div>
+          <div class="row" style="margin-top:auto;padding-top:8px">
+            ${have
+              ? `<a class="btn primary sm" href="#/deck/${have.id}">▶ Mở bộ đề</a>${outdated ? `<button class="btn sm" data-upd="${i}" data-id="${have.id}" title="Đề mẫu đã được cập nhật – lấy bản mới, giữ nguyên tiến độ">🔄 Cập nhật</button>` : ''}<button class="btn sm ghost" data-add="${i}" title="Thêm một bản riêng (tiến độ mới)">➕ Thêm bản mới</button>`
+              : `<button class="btn primary sm" data-add="${i}">➕ Thêm & ôn ngay</button>`}
+          </div></div>`;
+      }).join('')}</div>` : '<div class="card empty">Không tìm thấy đề mẫu phù hợp.</div>';
+      $$('[data-add]').forEach((b) => (b.onclick = () => { const deck = addSample(list[+b.dataset.add]); toast(`Đã thêm “${deck.title}”`); location.hash = '#/deck/' + deck.id; }));
+      $$('[data-upd]').forEach((b) => (b.onclick = () => {
+        const sm = list[+b.dataset.upd];
+        const old = loadDeck(b.dataset.id);
+        if (!old || !confirm(`Cập nhật “${old.title}” theo bản đề mẫu mới (${sm.deck.questions.length} câu)? Tiến độ của các câu giữ nguyên.`)) return;
+        const fresh = JSON.parse(JSON.stringify(sm.deck));
+        Object.assign(old, { title: fresh.title, subject: fresh.subject, description: fresh.description, language: fresh.language, passages: fresh.passages, questions: fresh.questions, sampleHash: sm.hash });
+        saveDeck(old);
+        toast('Đã cập nhật bộ đề');
+        render();
+      }));
+    }
+    const kw = $('#kw');
+    kw.classList.toggle('hidden', list.length < 5);
+    kw.oninput = render;
+    render();
   }
 
   // ======================================================================
@@ -1758,6 +1864,7 @@
     window.scrollTo(0, 0);
     if (!parts.length) return viewHome();
     if (parts[0] === 'import') return viewImport(query.get('deck'));
+    if (parts[0] === 'samples') return viewSamples();
     if (parts[0] === 'deck') {
       const deck = loadDeck(parts[1]);
       if (!deck) { app.innerHTML = '<div class="card empty"><p>Không tìm thấy bộ đề này (có thể đã bị xoá hoặc ở trình duyệt khác).</p><a class="btn primary" href="#/">Về thư viện</a></div>'; return; }

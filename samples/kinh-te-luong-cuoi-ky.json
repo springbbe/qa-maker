@@ -1,6 +1,4 @@
-/* Bộ đề mẫu: trích từ "Đề ôn thi Kinh tế lượng cuối kỳ" (ĐH Ngoại thương).
-   Viết đúng định dạng JSON mà AI sẽ trả về (dấu \ đã nhân đôi) để kiểm tra luôn bộ đọc JSON. */
-window.SAMPLE_DECK_JSON = String.raw`{
+{
   "format": "qa-maker",
   "version": 1,
   "title": "Đề ôn thi Kinh tế lượng cuối kỳ (mẫu)",
@@ -400,4 +398,4 @@ window.SAMPLE_DECK_JSON = String.raw`{
       "answerSource": "ai", "note": "Câu tự luận minh họa.", "tags": ["đa cộng tuyến"], "difficulty": "medium"
     }
   ]
-}`;
+}

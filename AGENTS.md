@@ -14,9 +14,10 @@ Ngôn ngữ giao diện, prompt, comment: **tiếng Việt**.
 ## Bản đồ code
 | File | Nội dung |
 |---|---|
-| `index.html` | Khung trang, header, nạp CDN + các file `assets/*.js` theo thứ tự: prompt → sample → app |
+| `index.html` | Khung trang, header, nạp CDN + `assets/prompt.js` rồi `assets/app.js` |
 | `assets/prompt.js` | `window.buildPrompt(extra)` — prompt chuẩn gửi AI (viết bằng `String.raw`, đừng làm hỏng dấu `\`) |
-| `assets/sample.js` | `window.SAMPLE_DECK_JSON` — bộ đề mẫu dạng chuỗi JSON (dấu `\` của LaTeX đã nhân đôi) |
+| `samples/index.json` | Danh sách đề mẫu: `{ "samples": ["file.json" \| { "file", "title"?, "subject"?, "description"? }] }` |
+| `samples/*.json` | Mỗi file là một bộ đề đúng định dạng qa-maker (giống JSON AI trả về) |
 | `assets/app.js` | Toàn bộ logic, một IIFE, chia mục bằng comment `// ===` |
 | `assets/style.css` | Biến màu ở `:root`, dark mode qua `prefers-color-scheme` + `[data-theme]` |
 
@@ -29,14 +30,17 @@ Các mục trong `app.js`:
 6. `makeInput(q, opts)` — ô trả lời dùng chung cho mọi loại câu
 7. Phạm vi ôn tập: `filterQs(deck, scope, eligible)`
 8. Các chế độ: đăng ký trong object `MODES` (`run(deck)`, `eligible`, `noScope`). Thêm chế độ mới = thêm 1 mục vào `MODES` + 1 hàm `runXxx`.
-9. Trang: `viewHome`, `viewImport`, `viewDeck`; router hash `#/`, `#/import?deck=`, `#/deck/<id>/<mode>`
+9. Trang: `viewHome`, `viewSamples`, `viewImport`, `viewDeck`; router hash `#/`, `#/samples`, `#/import?deck=`, `#/deck/<id>/<mode>`
+   - Đề mẫu: `loadSamples()` fetch `samples/index.json` rồi từng file, qua `parseImport`. Bộ đề thêm từ mẫu có `sampleFile` + `sampleHash` (hash nội dung file) để hiện nút "Mở" / "🔄 Cập nhật" (giữ tiến độ vì tiến độ gắn theo `id` câu).
 10. `window.QAM` lộ một số hàm để kiểm thử từ console.
 
 ## Định dạng dữ liệu
 Định nghĩa chuẩn nằm trong prompt (`assets/prompt.js`) và README. Câu hỏi sau khi chuẩn hóa luôn có:
 `id, number, section, type, question, options[{key,text}], answer, context, passage, figure, explanation, note, answerSource ('document'|'ai'|''), fixedOrder, tags[], difficulty`.
 `type` ∈ `single | multiple | true_false | fill_blank | short_answer | essay`.
-Nếu đổi định dạng: cập nhật **cùng lúc** prompt, `normalizeQuestion`, sample, README.
+Nếu đổi định dạng: cập nhật **cùng lúc** prompt, `normalizeQuestion`, các file trong `samples/`, README.
+
+Thêm đề mẫu: thả file JSON vào `samples/` và thêm tên file vào `samples/index.json`. Không đổi `id` câu của đề mẫu đã phát hành (tiến độ người dùng gắn theo `id`).
 
 Tiến độ mỗi câu (`qam:prog:<deckId>` → `{ [qid]: {...} }`): `a` số lần làm, `c` đúng, `w` sai, `last` (1/0), `t` thời điểm, `known` (flashcard), `star`, `srs {reps,int,ef,due}`.
 
@@ -44,7 +48,8 @@ Tiến độ mỗi câu (`qam:prog:<deckId>` → `{ [qid]: {...} }`): `a` số l
 Không có test runner. Cách đã dùng:
 ```bash
 python3 -m http.server 8765 &
-# Playwright (đã cài sẵn trong môi trường cloud): mở http://localhost:8765, bấm "Dùng thử đề mẫu",
+# Playwright (đã cài sẵn trong môi trường cloud): mở http://localhost:8765/#/samples, thêm một đề mẫu,
 # đi qua từng #/deck/<id>/<mode>, bắt sự kiện pageerror/console error; gọi window.QAM.parseImport(...) để test bộ đọc JSON.
 ```
-Luôn chạy `node --check assets/*.js` trước khi commit.
+Luôn chạy `node --check assets/*.js` và kiểm tra JSON các file `samples/*.json` parse được trước khi commit.
+Lưu ý: đừng dùng `pkill -f "http.server ..."` trong cùng lệnh shell có chuỗi đó — nó sẽ tự kill shell; dùng `kill <pid>`.
