@@ -876,13 +876,12 @@
       if (i >= qs.length) return summary();
       q = qs[i]; checked = false;
       const P = getProg(deck.id);
-      const nOk = results.filter((r) => r.ok).length;
       app.innerHTML = backLink(deck) + `
         <div class="narrow">
           <div class="session-head">
             <b>${isWrongMode ? '🎯 Ôn câu sai' : '✍️ Luyện tập'}</b><span class="muted small">${i + 1}/${qs.length}</span>
             <div class="bar"><i style="width:${pct(i, qs.length)}%"></i></div>
-            <span class="chip ok">✓ ${nOk}</span><span class="chip bad">✗ ${results.length - nOk}</span>
+            <span class="chip ok" id="nOk"></span><span class="chip bad" id="nBad"></span>
           </div>
           <div class="card" id="qcard">${questionHtml(q, deck, { prog: P })}<div id="inp"></div><div id="fb"></div>
             <div class="actions" id="acts">
@@ -897,6 +896,12 @@
       widget.focus();
       $('#skip').onclick = () => { i++; render(); };
       $('#check').onclick = check;
+      updateCounts();
+    }
+    function updateCounts() {
+      const nOk = results.filter((r) => r.ok).length;
+      $('#nOk').textContent = '✓ ' + nOk;
+      $('#nBad').textContent = '✗ ' + (results.length - nOk);
     }
     function check() {
       if (checked) return next();
@@ -916,6 +921,7 @@
         fb.innerHTML = `<div class="feedback ${g ? 'ok' : 'bad'}"><div class="verdict">${g ? '✓ Chính xác!' : '✗ Chưa đúng'}</div>${g && q.type !== 'fill_blank' && q.type !== 'short_answer' ? '' : '<div><b>Đáp án đúng:</b> ' + answerHtml(q) + '</div>'}${explainHtml(q)}</div>`;
         record(deck.id, q.id, g);
         results.push({ q, ok: g, r });
+        updateCounts();
         $('#check').textContent = i + 1 < qs.length ? 'Câu tiếp →' : 'Xem kết quả';
         $('#skip').classList.add('hidden');
       }
